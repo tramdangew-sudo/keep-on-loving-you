@@ -1,0 +1,1780 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Keep On Loving You ♡ — Nơi Koly chia sẻ hơi ấm trong mùa đông</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&family=Nunito:ital,wght@0,500;0,600;0,700;0,800;1,500&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            outericy: '#E7F5F9',
+            journaldeep: '#1A4968',
+            journalmid: '#276386',
+            journallight: '#397B9E',
+            papercream: '#F9FBFD',
+            paperslot: '#92B1BF',
+            inknavy: '#12324A',
+            tealaccent: '#2B728E',
+            warmrose: '#E6A2B0'
+          },
+          fontFamily: {
+            journal: ['"Cormorant Garamond"', 'serif'],
+            ui: ['"Quicksand"', 'sans-serif'],
+            body: ['"Nunito"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Nunito', sans-serif;
+      color: #12324A;
+      background-color: #E7F5F9;
+      background-image:
+        radial-gradient(circle at 15% 15%, rgba(255, 255, 255, 0.85) 0%, transparent 45%),
+        radial-gradient(circle at 85% 80%, rgba(198, 232, 242, 0.75) 0%, transparent 50%),
+        linear-gradient(180deg, #E7F5F9 0%, #D4ECF4 100%);
+      background-attachment: fixed;
+      min-height: 100vh;
+      overflow-x: hidden;
+      margin: 0;
+    }
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: rgba(18, 50, 74, 0.08); border-radius: 99px; }
+    ::-webkit-scrollbar-thumb { background: #397B9E; border-radius: 99px; }
+
+    .journal-outer-shell {
+      background: #0F2E44;
+      border-radius: 28px;
+      padding: 10px;
+      box-shadow: 0 24px 60px rgba(16, 48, 72, 0.28), 0 4px 14px rgba(16, 48, 72, 0.16), inset 0 1px 1px rgba(255, 255, 255, 0.25);
+      position: relative;
+    }
+    .journal-watercolor-page {
+      background-color: #1F5677;
+      background-image:
+        radial-gradient(circle at 38% 45%, rgba(69, 138, 168, 0.65) 0%, rgba(33, 89, 122, 0.85) 54%, rgba(20, 61, 88, 0.98) 100%),
+        radial-gradient(circle at 75% 30%, rgba(82, 152, 181, 0.38) 0%, transparent 48%),
+        linear-gradient(90deg, rgba(10,32,48,0.35) 0%, transparent 3%, transparent 48.5%, rgba(10,32,48,0.28) 50%, rgba(255,255,255,0.07) 50.6%, transparent 52%, transparent 97%, rgba(10,32,48,0.3) 100%);
+      border-radius: 20px;
+      border: 1.5px solid rgba(185, 224, 238, 0.28);
+      box-shadow: inset 0 0 55px rgba(9, 29, 44, 0.65);
+      position: relative;
+      overflow: hidden;
+    }
+    .journal-speckles-overlay {
+      position: absolute; inset: 0; pointer-events: none; opacity: 0.55;
+      background-image:
+        radial-gradient(2px 2px at 8% 14%, rgba(255,255,255,0.85) 50%, transparent 100%),
+        radial-gradient(2.5px 2px at 16% 36%, rgba(255,255,255,0.75) 50%, transparent 100%),
+        radial-gradient(2px 2.5px at 24% 78%, rgba(255,255,255,0.8) 50%, transparent 100%),
+        radial-gradient(3px 2px at 35% 19%, rgba(255,255,255,0.7) 50%, transparent 100%),
+        radial-gradient(2px 2px at 46% 84%, rgba(255,255,255,0.8) 50%, transparent 100%),
+        radial-gradient(2.5px 2.5px at 58% 12%, rgba(255,255,255,0.75) 50%, transparent 100%),
+        radial-gradient(2px 2px at 67% 64%, rgba(255,255,255,0.85) 50%, transparent 100%),
+        radial-gradient(3px 2.5px at 79% 26%, rgba(255,255,255,0.7) 50%, transparent 100%),
+        radial-gradient(2px 2px at 88% 72%, rgba(255,255,255,0.85) 50%, transparent 100%);
+      background-size: 340px 340px;
+    }
+    .journal-divider-tab {
+      writing-mode: vertical-rl; text-orientation: mixed;
+      background: linear-gradient(90deg, #B5CDD8 0%, #DFECEF 35%, #F2F8FA 100%);
+      color: #163B54; border: 1.5px solid #0E2B3E; border-left: none;
+      border-radius: 0 11px 11px 0; padding: 16px 8px;
+      font-family: 'Cormorant Garamond', serif; font-weight: 700; font-size: 15px; letter-spacing: 0.08em;
+      box-shadow: 4px 4px 12px rgba(11, 35, 52, 0.35), inset 2px 0 4px rgba(15, 46, 68, 0.25);
+      cursor: pointer; transition: all 0.22s ease; user-select: none;
+    }
+    .journal-divider-tab:hover { padding-right: 13px; background: linear-gradient(90deg, #D5E7EE 0%, #FFFFFF 100%); }
+    .journal-divider-tab.active {
+      background: linear-gradient(90deg, #E8F4F8 0%, #FFFFFF 100%);
+      color: #0B2538; padding-right: 15px; box-shadow: 6px 4px 16px rgba(11, 35, 52, 0.45);
+    }
+    .torn-paper-wrap { position: relative; padding: 2px; transition: transform 0.25s ease; }
+    .torn-paper-bg {
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg, #FBFDFF 0%, #EBF4F8 100%);
+      filter: url(#torn-paper);
+      box-shadow: 0 10px 28px rgba(8, 27, 41, 0.45), inset 0 0 22px rgba(132, 175, 194, 0.25);
+      border-radius: 10px; z-index: 0;
+    }
+    .torn-paper-Wrap-halo::before {
+      content: ""; position: absolute; inset: -5px;
+      background: rgba(226, 241, 248, 0.25);
+      filter: url(#torn-paper) blur(3px); border-radius: 14px; z-index: -1; pointer-events: none;
+    }
+    .torn-paper-content { position: relative; z-index: 1; }
+    .scribble-bar {
+      background: rgba(134, 168, 184, 0.52); border-radius: 7px; padding: 7px 12px;
+      color: #F9FBFD; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 14px;
+      transition: all 0.18s ease; box-shadow: inset 0 1px 2px rgba(18, 50, 74, 0.18);
+    }
+    .scribble-bar:hover { background: rgba(104, 146, 166, 0.78); }
+    .btn-journal {
+      background: linear-gradient(180deg, #387B9C 0%, #235875 100%); color: #F9FBFD;
+      font-family: 'Quicksand', sans-serif; font-weight: 700; border: 1px solid #10324A;
+      box-shadow: 0 2px 6px rgba(12, 38, 56, 0.35); border-radius: 9px; transition: all 0.18s ease;
+    }
+    .btn-journal:hover { filter: brightness(1.08); transform: translateY(-1px); }
+    .btn-journal-light {
+      background: rgba(249, 251, 253, 0.9); color: #1A4968;
+      font-family: 'Quicksand', sans-serif; font-weight: 700; border: 1px solid rgba(57, 123, 158, 0.45);
+      border-radius: 9px; transition: all 0.18s ease;
+    }
+    .btn-journal-light:hover { background: #FFFFFF; }
+    @keyframes snowFallSway {
+      0% { transform: translate3d(0, -10vh, 0) rotate(0deg); }
+      50% { transform: translate3d(18px, 50vh, 0) rotate(180deg); }
+      100% { transform: translate3d(-12px, 110vh, 0) rotate(360deg); }
+    }
+    .falling-crystal {
+      position: fixed; top: -30px; pointer-events: none; z-index: 40;
+      animation-name: snowFallSway; animation-timing-function: linear; animation-iteration-count: infinite;
+      filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.8));
+    }
+    .luminous-ice-cube {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.72) 0%, rgba(185, 228, 237, 0.48) 50%, rgba(68, 146, 176, 0.55) 100%);
+      backdrop-filter: blur(8px); border: 2px solid rgba(255, 255, 255, 0.88);
+      box-shadow: 0 0 28px rgba(185, 228, 237, 0.65), inset 0 0 24px rgba(255, 255, 255, 0.75);
+      border-radius: 24px; transition: all 0.45s ease;
+    }
+    .ice-stage-1 {
+      box-shadow: 0 0 42px rgba(255, 244, 214, 0.85), 0 0 65px rgba(185, 228, 237, 0.9), inset 0 0 35px rgba(255, 255, 255, 0.9);
+      transform: scale(1.04) rotate(2deg);
+    }
+    .ice-stage-2 {
+      background: linear-gradient(135deg, rgba(255, 252, 240, 0.88) 0%, rgba(196, 238, 246, 0.75) 100%);
+      box-shadow: 0 0 60px rgba(255, 236, 179, 0.95), 0 0 90px rgba(255, 255, 255, 0.95), inset 0 0 45px #FFFFFF;
+      transform: scale(1.08) rotate(-2deg);
+    }
+    .ice-stage-dissolve { opacity: 0; transform: scale(1.35); filter: blur(8px); pointer-events: none; }
+    @keyframes particleBurstOut {
+      0% { opacity: 1; transform: translate(0, 0) scale(0.6) rotate(0deg); }
+      100% { opacity: 0; transform: translate(var(--tx), var(--ty)) scale(1.35) rotate(220deg); }
+    }
+    .burst-snowflake { position: absolute; pointer-events: none; animation: particleBurstOut 0.95s ease-out forwards; }
+    @keyframes envelopeFly {
+      0% { transform: translate(0, 0) scale(1) rotate(0deg); opacity: 1; }
+      100% { transform: translate(120px, -140px) scale(0.25) rotate(25deg); opacity: 0; }
+    }
+    .fly-away { animation: envelopeFly 0.95s ease-in forwards; }
+  </style>
+</head>
+
+<body class="py-4 sm:py-8 px-2 sm:px-6 flex flex-col items-center justify-between">
+
+  <!-- SVG DEFS: FILTER GIẤY XÉ & BÔNG TUYẾT 6 CÁNH -->
+  <svg width="0" height="0" class="fixed pointer-events-none" aria-hidden="true">
+    <defs>
+      <filter id="torn-paper" x="-5%" y="-5%" width="110%" height="110%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="5" result="noise" />
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G" />
+      </filter>
+      <symbol id="botanical-divider" viewBox="0 0 220 26">
+        <path d="M12 16 C45 6, 82 6, 105 14 M208 16 C175 6, 138 6, 115 14" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" fill="none" />
+        <path d="M12 16 C8 18, 8 22, 13 21 M208 16 C212 18, 212 22, 207 21" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" fill="none" />
+        <path d="M110 14 L110 6 M110 14 L103 8 M110 14 L117 8 M110 14 L102 15 M110 14 L118 15 M110 14 L106 20 M110 14 L114 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+      </symbol>
+      <symbol id="snowflake-1" viewBox="-24 -24 48 48">
+        <g stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+          <g id="sf1-arm"><line x1="0" y1="0" x2="0" y2="-20" /><polyline points="-5,-14 0,-10 5,-14" /><polyline points="-3.5,-18 0,-15 3.5,-18" /></g>
+          <use href="#sf1-arm" transform="rotate(60)" /><use href="#sf1-arm" transform="rotate(120)" /><use href="#sf1-arm" transform="rotate(180)" /><use href="#sf1-arm" transform="rotate(240)" /><use href="#sf1-arm" transform="rotate(300)" />
+          <polygon points="0,-4 3.5,-2 3.5,2 0,4 -3.5,2 -3.5,-2" />
+        </g>
+      </symbol>
+      <symbol id="snowflake-2" viewBox="-24 -24 48 48">
+        <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+          <g id="sf2-arm"><line x1="0" y1="0" x2="0" y2="-19" /><polyline points="-6,-11 0,-7 6,-11" /><polyline points="-3,-16 0,-13 3,-16" /></g>
+          <use href="#sf2-arm" transform="rotate(60)" /><use href="#sf2-arm" transform="rotate(120)" /><use href="#sf2-arm" transform="rotate(180)" /><use href="#sf2-arm" transform="rotate(240)" /><use href="#sf2-arm" transform="rotate(300)" />
+        </g>
+      </symbol>
+      <symbol id="snowflake-3" viewBox="-24 -24 48 48">
+        <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+          <g id="sf3-arm"><line x1="0" y1="0" x2="0" y2="-20" /><polyline points="-4.5,-13 0,-9 4.5,-13" /><circle cx="0" cy="-20" r="1.2" fill="currentColor" /></g>
+          <use href="#sf3-arm" transform="rotate(60)" /><use href="#sf3-arm" transform="rotate(120)" /><use href="#sf3-arm" transform="rotate(180)" /><use href="#sf3-arm" transform="rotate(240)" /><use href="#sf3-arm" transform="rotate(300)" />
+        </g>
+      </symbol>
+      <symbol id="watercolor-wings" viewBox="0 0 300 135">
+        <path d="M136 74 C118 46, 76 42, 48 16 C36 6, 18 14, 22 36 C25 52, 34 62, 40 66 C26 70, 26 92, 42 98 C50 101, 56 100, 60 99 C54 110, 66 124, 84 120 C94 118, 100 112, 102 108 C108 122, 132 118, 138 96 Z" fill="#E2F3FA" stroke="#184361" stroke-width="3" stroke-linejoin="round" />
+        <path d="M164 74 C182 46, 224 42, 252 16 C264 6, 282 14, 278 36 C275 52, 266 62, 260 66 C274 70, 274 92, 258 98 C250 101, 244 100, 240 99 C246 110, 234 124, 216 120 C206 118, 200 112, 198 108 C192 122, 168 118, 162 96 Z" fill="#E2F3FA" stroke="#184361" stroke-width="3" stroke-linejoin="round" />
+        <path d="M150 75 C146 68, 136 70, 138 79 C140 86, 150 93, 150 93 C150 93, 160 86, 162 79 C164 70, 154 68, 150 75 Z" fill="#3598A8" stroke="#184361" stroke-width="2.5" stroke-linejoin="round" />
+      </symbol>
+      <symbol id="knitted-hat-seal" viewBox="0 0 220 200">
+        <ellipse cx="110" cy="184" rx="74" ry="11" fill="#89B8C9" opacity="0.45" />
+        <path d="M40 165 C34 128, 46 88, 110 88 C174 88, 186 128, 180 165 C186 173, 178 182, 162 180 C145 182, 75 182, 58 180 C42 182, 34 173, 40 165 Z" fill="#F7FBFC" stroke="#0F263A" stroke-width="4" stroke-linejoin="round" />
+        <path d="M48 124 C74 142, 146 142, 172 120 C177 132, 171 148, 152 154 C122 162, 76 160, 50 146 C42 141, 43 130, 48 124 Z" fill="#175870" stroke="#0F263A" stroke-width="4" stroke-linejoin="round" />
+        <path d="M126 150 L124 184 L152 184 L150 146 Z" fill="#175870" stroke="#0F263A" stroke-width="3.8" stroke-linejoin="round" />
+        <path d="M52 118 C46 78, 70 54, 110 54 C150 54, 174 78, 168 118 C164 136, 142 144, 110 144 C78 144, 56 136, 52 118 Z" fill="#F7FBFC" stroke="#0F263A" stroke-width="4" />
+        <ellipse cx="74" cy="112" rx="10" ry="7.5" fill="#A9CEDB" /><ellipse cx="146" cy="110" rx="10" ry="7.5" fill="#A9CEDB" />
+        <circle cx="90" cy="100" r="6" fill="#0F263A" /><circle cx="88" cy="98" r="2.2" fill="#FFFFFF" />
+        <path d="M126 99 C130 96, 136 96, 139 99" stroke="#0F263A" stroke-width="3.8" stroke-linecap="round" fill="none" />
+        <ellipse cx="111" cy="103" rx="5.5" ry="4" fill="#0F263A" />
+        <path d="M106 112 C106 123, 117 123, 117 112 Z" fill="#E58B98" stroke="#0F263A" stroke-width="3" />
+        <path d="M98 111 Q105 117 111 108 Q117 117 125 110" fill="none" stroke="#0F263A" stroke-width="3.2" stroke-linecap="round" />
+        <path d="M140 136 C126 128, 120 112, 129 109 C137 106, 148 118, 152 132" fill="#F7FBFC" stroke="#0F263A" stroke-width="3.8" stroke-linecap="round" />
+        <path d="M92 32 C88 22, 98 14, 108 17 C116 12, 128 18, 126 28 C132 34, 124 44, 112 42 C100 44, 88 39, 92 32 Z" fill="#E8F4F8" stroke="#0F263A" stroke-width="3.6" />
+        <path d="M54 78 C56 42, 84 32, 112 33 C142 34, 166 50, 168 82 Z" fill="#1D667D" stroke="#0F263A" stroke-width="4" />
+        <path d="M49 82 C52 64, 84 58, 114 60 C144 62, 170 70, 171 88 C171 96, 164 98, 156 94 C132 82, 84 80, 56 92 C50 94, 48 89, 49 82 Z" fill="#24758E" stroke="#0F263A" stroke-width="4" />
+      </symbol>
+      <symbol id="watercolor-mailbox" viewBox="0 0 200 200">
+        <path d="M35 182 C42 168, 62 164, 76 168 C90 158, 118 158, 130 168 C144 165, 162 172, 166 184 Z" fill="#E5F2F7" stroke="#18435A" stroke-width="3.2" />
+        <path d="M88 112 L114 110 L114 170 L88 172 Z" fill="#B8D0D8" stroke="#18435A" stroke-width="3.2" />
+        <path d="M52 72 C52 46, 78 40, 118 42 C146 44, 158 58, 158 82 L158 112 L52 116 Z" fill="#7EB7B3" stroke="#18435A" stroke-width="3.5" />
+        <path d="M52 74 C52 46, 88 46, 94 76 L94 116 L52 116 Z" fill="#467C87" stroke="#18435A" stroke-width="3.5" />
+        <path d="M52 116 L24 134 C14 142, 24 158, 46 154 L94 116 Z" fill="#89C0BC" stroke="#18435A" stroke-width="3.5" />
+        <path d="M56 54 C66 36, 94 34, 122 36 C144 38, 160 48, 158 64 C150 68, 142 60, 132 66 C122 72, 112 62, 98 62 C86 62, 72 48, 56 54 Z" fill="#F4F9FB" stroke="#18435A" stroke-width="3" />
+        <g transform="rotate(-6 74 88)">
+          <rect x="54" y="72" width="44" height="32" rx="3" fill="#F8FCFD" stroke="#18435A" stroke-width="2.8" />
+          <polyline points="55,74 76,90 97,74" fill="none" stroke="#18435A" stroke-width="2.4" />
+          <path d="M76 86 C73 82, 68 83, 69 88 C70 92, 76 96, 76 96 C76 96, 82 92, 83 88 C84 83, 79 82, 76 86 Z" fill="#E598A4" stroke="#18435A" stroke-width="2" />
+        </g>
+        <path d="M114 90 L114 28 L136 28 L136 44 L120 46 L120 90 Z" fill="#DF888E" stroke="#18435A" stroke-width="3" />
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- BÔNG TUYẾT WATERMARK CHÌM TRÊN NỀN -->
+  <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden opacity-45">
+    <svg class="w-72 h-72 text-white absolute -top-12 -left-12"><use href="#snowflake-1" /></svg>
+    <svg class="w-96 h-96 text-white absolute -bottom-20 -right-16"><use href="#snowflake-2" /></svg>
+    <svg class="w-56 h-56 text-white absolute top-1/3 right-10"><use href="#snowflake-3" /></svg>
+  </div>
+
+  <!-- LỚP BÔNG TUYẾT 6 CÁNH RƠI -->
+  <div id="falling-snow-layer" class="fixed inset-0 pointer-events-none z-40 overflow-hidden"></div>
+
+  <!-- MÀN HÌNH LOADING -->
+  <div id="loading-screen" class="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-[#E7F5F9] transition-opacity duration-500">
+    <div class="torn-paper-wrap p-8 max-w-sm text-center">
+      <div class="torn-paper-bg"></div>
+      <div class="torn-paper-content flex flex-col items-center">
+        <svg class="w-14 h-14 text-tealaccent animate-spin mb-3" style="animation-duration: 7s;"><use href="#snowflake-1" /></svg>
+        <h2 class="font-journal italic font-bold text-3xl text-inknavy">Keep On Loving You ♡</h2>
+        <svg class="w-36 h-5 text-tealaccent my-1"><use href="#botanical-divider" /></svg>
+        <p class="font-ui text-xs text-tealaccent mt-1">Đang mở cuốn sổ mùa đông của bạn...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CUỐN SỔ TAY MÀU NƯỚC MÙA ĐÔNG -->
+  <div class="relative z-10 w-full max-w-6xl my-auto pr-0 lg:pr-9">
+
+    <!-- 4 TAB ĐÁNH DẤU TRANG BÊN MÉP PHẢI SỔ -->
+    <nav aria-label="Điều hướng sổ tay" class="hidden lg:flex flex-col gap-2 absolute right-0 top-14 z-30">
+      <button type="button" data-journal-tab="sec-characters" class="journal-tab-trigger journal-divider-tab active">nhân vật</button>
+      <button type="button" data-journal-tab="sec-commission" class="journal-tab-trigger journal-divider-tab">commission</button>
+      <button type="button" data-journal-tab="sec-game" class="journal-tab-trigger journal-divider-tab">trò chơi</button>
+      <button type="button" data-journal-tab="sec-letters" class="journal-tab-trigger journal-divider-tab">hòm thư</button>
+    </nav>
+
+    <div class="journal-outer-shell">
+      <div class="journal-watercolor-page min-h-[780px] p-4 sm:p-8 flex flex-col justify-between">
+        <div class="journal-speckles-overlay"></div>
+
+        <!-- HEADER SỔ TAY -->
+        <header class="relative z-20 flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-white/15">
+          <div class="flex flex-wrap items-center gap-2">
+            <button id="btn-toggle-snow" type="button" class="px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 border border-white/20 text-papercream font-ui font-bold text-xs flex items-center gap-1.5 transition">
+              <svg class="w-3.5 h-3.5 text-outericy"><use href="#snowflake-1" /></svg>
+              <span>Tuyết rơi: <strong id="snow-state-text">Bật</strong></span>
+            </button>
+
+            <div class="px-3 py-1 rounded-lg bg-white/10 border border-white/20 text-papercream flex items-center gap-2">
+              <button id="btn-toggle-audio" type="button" class="font-ui font-bold text-xs hover:text-outericy flex items-center gap-1">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+                <span id="audio-play-label">Nhạc: Tắt</span>
+              </button>
+              <input id="audio-volume-slider" type="range" min="0" max="100" value="70" class="w-16 sm:w-20 h-1.5 accent-outericy cursor-pointer" />
+              <span id="audio-vol-percent" class="font-ui text-[11px] text-outericy w-8">70%</span>
+            </div>
+
+            <!-- NÚT KHÓA HOST (MẶC ĐỊNH ẨN 100% VỚI USER, CHỈ HIỆN KHI BẤM SHIFT + H) -->
+            <button id="btn-open-admin" type="button" title="Quản trị Sổ tay (Host)" class="hidden host-only p-1.5 rounded-lg bg-white/15 hover:bg-white/25 border border-white/30 text-papercream transition">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </button>
+          </div>
+
+          <div class="text-right">
+            <div class="flex items-center justify-end gap-2">
+              <svg class="w-11 h-5"><use href="#watercolor-wings" /></svg>
+              <h1 class="font-journal italic font-bold text-2xl sm:text-3xl text-papercream tracking-wide leading-none">Keep On Loving You ♡</h1>
+            </div>
+            <p class="font-ui text-xs text-outericy/85 mt-0.5">Nơi Koly chia sẻ hơi ấm trong mùa đông</p>
+          </div>
+
+          <div class="flex lg:hidden w-full items-center justify-center gap-1.5 pt-2 border-t border-white/10">
+            <button type="button" data-journal-tab="sec-characters" class="journal-tab-trigger px-3 py-1 rounded-lg bg-white text-inknavy font-ui font-bold text-xs">Nhân Vật</button>
+            <button type="button" data-journal-tab="sec-commission" class="journal-tab-trigger px-3 py-1 rounded-lg bg-white/15 text-papercream font-ui font-bold text-xs">Commission</button>
+            <button type="button" data-journal-tab="sec-game" class="journal-tab-trigger px-3 py-1 rounded-lg bg-white/15 text-papercream font-ui font-bold text-xs">Trò Chơi</button>
+            <button type="button" data-journal-tab="sec-letters" class="journal-tab-trigger px-3 py-1 rounded-lg bg-white/15 text-papercream font-ui font-bold text-xs">Hòm Thư</button>
+          </div>
+
+          <audio id="real-mp3-player" preload="none" loop></audio>
+        </header>
+
+        <!-- NỘI DUNG 4 TRANG SỔ -->
+        <div class="relative z-20 flex-1 my-6 flex flex-col">
+
+          <!-- TRANG 1: NHÂN VẬT -->
+          <section id="sec-characters" class="journal-page-section flex-1 flex flex-col">
+            <div class="flex flex-wrap items-center justify-between gap-3 mb-6">
+              <div>
+                <h2 class="font-journal italic font-bold text-2xl sm:text-3xl text-papercream">Whispers & Character Pages</h2>
+                <p class="font-ui text-xs text-outericy/80">Chạm vào từng mảnh giấy màu nước để đọc câu chuyện, hồ sơ và nghe nhạc riêng của nhân vật</p>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <input id="char-search-input" type="text" placeholder="Tìm tên nhân vật..." class="px-3.5 py-1.5 rounded-xl bg-papercream/95 border border-white text-inknavy placeholder-inknavy/50 font-ui text-xs focus:outline-none" />
+                <!-- NÚT THÊM/SỬA NHÂN VẬT (ẨN 100% VỚI USER, CHỈ HIỆN KHI BẤM SHIFT + H) -->
+                <button id="btn-add-char-shortcut" type="button" class="hidden host-only btn-journal-light px-3.5 py-1.5 text-xs">
+                  + Thêm / Sửa Nhân Vật
+                </button>
+              </div>
+            </div>
+            <div id="characters-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 my-auto"></div>
+          </section>
+
+          <!-- TRANG 2: COMMISSION VIẾT CHAR -->
+          <section id="sec-commission" class="journal-page-section hidden flex-1 flex flex-col justify-center">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-7 items-start my-auto">
+
+              <div class="lg:col-span-7 torn-paper-wrap torn-paper-Wrap-halo p-6 sm:p-8">
+                <div class="torn-paper-bg"></div>
+                <div class="torn-paper-content text-center">
+                  <h2 class="font-journal italic font-bold text-3xl text-inknavy">Commission Viết Nhân Vật</h2>
+                  <svg class="w-44 h-6 mx-auto text-tealaccent my-1"><use href="#botanical-divider" /></svg>
+
+                  <div class="mt-4 rounded-xl border-2 border-dashed border-paperslot bg-white/70 min-h-[300px] flex flex-col items-center justify-center p-4 overflow-hidden">
+                    <img id="comm-uploaded-img" alt="Bảng thông tin Commission" class="hidden max-w-full max-h-[420px] rounded-lg object-contain cursor-pointer" />
+                    <div id="comm-empty-prompt" class="py-10 px-4 text-center space-y-3">
+                      <svg class="w-10 h-10 mx-auto text-tealaccent/60"><use href="#snowflake-2" /></svg>
+                      <p class="font-journal italic text-xl text-inknavy">Bảng thông tin Commission đang được cập nhật</p>
+                      <label class="hidden host-only inline-block btn-journal px-4 py-2 text-xs cursor-pointer">
+                        + Chọn Ảnh Từ Máy Để Chèn Vào Đây (Host)
+                        <input id="quick-comm-img-input" type="file" accept="image/*" class="hidden" />
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="hidden host-only mt-3 flex items-center justify-center gap-3">
+                    <label class="btn-journal-light px-3.5 py-1.5 text-xs cursor-pointer">
+                      Đổi / Chèn ảnh khác từ máy (Host)
+                      <input id="replace-comm-img-input" type="file" accept="image/*" class="hidden" />
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="lg:col-span-5 torn-paper-wrap torn-paper-Wrap-halo p-6 sm:p-8">
+                <div class="torn-paper-bg"></div>
+                <div class="torn-paper-content space-y-4">
+                  <div class="text-center">
+                    <h3 class="font-journal italic font-bold text-2xl text-inknavy">Liên Kết & Đăng Ký</h3>
+                    <svg class="w-36 h-5 mx-auto text-tealaccent my-1"><use href="#botanical-divider" /></svg>
+                  </div>
+
+                  <p id="comm-note-display" class="font-body text-xs sm:text-sm text-inknavy/85 leading-relaxed text-center">
+                    Sao chép đường dẫn bên dưới hoặc nhấn Mở liên kết để xem chi tiết và nhắn tin đặt Commission Viết Char cùng Koly.
+                  </p>
+
+                  <div class="p-4 rounded-xl bg-white/85 border border-paperslot/60 space-y-3">
+                    <label class="font-ui font-bold text-xs text-tealaccent block">Đường dẫn (Link) Commission:</label>
+                    <input id="comm-link-readonly" type="text" readonly value="https://facebook.com/" class="w-full px-3.5 py-2 rounded-lg bg-outericy/40 border border-paperslot text-inknavy font-body text-xs focus:outline-none" />
+                    <div class="flex items-center gap-2.5">
+                      <button id="btn-copy-comm-link" type="button" class="btn-journal flex-1 py-2 text-xs">Sao chép Link (Copy)</button>
+                      <a id="btn-open-comm-link" href="https://facebook.com/" target="_blank" rel="noopener noreferrer" class="btn-journal-light flex-1 py-2 text-xs text-center">Mở Liên Kết</a>
+                    </div>
+                  </div>
+
+                  <details class="hidden host-only text-xs font-ui text-tealaccent pt-2">
+                    <summary class="cursor-pointer hover:underline font-bold">Sửa nhanh đường dẫn Link & ghi chú (Host)</summary>
+                    <div class="mt-2.5 space-y-2 p-3 rounded-xl bg-white/80 border border-paperslot/50">
+                      <input id="quick-comm-link-edit" type="text" placeholder="Dán link Facebook / Docs / Form..." class="w-full px-3 py-1.5 rounded-lg bg-white border border-paperslot text-inknavy text-xs" />
+                      <textarea id="quick-comm-note-edit" rows="2" placeholder="Lời ghi chú ngắn..." class="w-full px-3 py-1.5 rounded-lg bg-white border border-paperslot text-inknavy text-xs"></textarea>
+                      <button id="btn-save-quick-comm" type="button" class="btn-journal w-full py-1.5 text-xs">Lưu Link Commission</button>
+                    </div>
+                  </details>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- TRANG 3: TRÒ CHƠI HẢI CẨU NÉM TUYẾT (CÓ RANDOM TÊN CHAR) -->
+          <section id="sec-game" class="journal-page-section hidden flex-1 flex flex-col justify-center">
+            <div class="torn-paper-wrap torn-paper-Wrap-halo max-w-2xl w-full mx-auto p-6 sm:p-8 my-auto">
+              <div class="torn-paper-bg"></div>
+              <div class="torn-paper-content text-center">
+                <div class="flex items-center justify-between flex-wrap gap-2 pb-2">
+                  <span class="font-ui font-bold text-xs text-tealaccent uppercase tracking-wider">Góc thư giãn mùa đông</span>
+                  <span id="ice-throw-badge" class="px-3.5 py-1 rounded-full bg-journaldeep text-papercream font-ui font-bold text-xs">Lượt ném tuyết: 0 / 3</span>
+                </div>
+
+                <h2 class="font-journal italic font-bold text-3xl text-inknavy mt-1">Hải Cẩu Ném Tuyết</h2>
+                <svg class="w-44 h-6 mx-auto text-tealaccent my-1"><use href="#botanical-divider" /></svg>
+                <p class="font-body text-xs sm:text-sm text-inknavy/80 max-w-md mx-auto">
+                  Chạm vào tinh thể băng đủ 3 lần để sưởi ấm khối băng, giải phóng những bông tuyết 6 cánh và nhận nhân vật ngẫu nhiên kèm thông điệp dành cho bạn.
+                </p>
+
+                <div id="ice-game-arena" class="my-5 relative h-64 rounded-2xl bg-gradient-to-b from-[#174461] via-[#256487] to-[#D7ECF5] border-2 border-white shadow-inner flex items-center justify-around px-4 sm:px-10 overflow-hidden cursor-pointer select-none">
+                  <div class="absolute inset-x-0 bottom-0 h-14 bg-gradient-to-t from-[#F5FAFC] to-transparent"></div>
+
+                  <div id="seal-thrower-box" class="relative z-10 w-28 h-28 sm:w-32 sm:h-32 flex items-center justify-center transition-transform duration-300">
+                    <img id="game-custom-seal-img" alt="Hải cẩu" class="hidden w-28 h-28 rounded-full object-cover border-2 border-white shadow-md" />
+                    <svg id="game-default-seal-svg" class="w-28 h-28 drop-shadow-md"><use href="#knitted-hat-seal" /></svg>
+                  </div>
+
+                  <div id="snowball-projectile" class="hidden absolute left-32 bottom-24 z-20 w-7 h-7 rounded-full bg-white shadow-[0_0_18px_#FFFFFF] transition-all duration-300 flex items-center justify-center">
+                    <svg class="w-5 h-5 text-tealaccent"><use href="#snowflake-1" /></svg>
+                  </div>
+
+                  <div class="relative z-10 w-36 h-36 flex items-center justify-center">
+                    <div id="luminous-ice-block" class="luminous-ice-cube w-32 h-32 flex flex-col items-center justify-center relative overflow-hidden">
+                      <div class="w-16 h-16 rounded-full bg-gradient-to-tr from-[#FFE7A8] via-[#B9E4ED] to-[#FFFFFF] blur-md opacity-75"></div>
+                      <svg class="w-14 h-14 text-white absolute drop-shadow"><use href="#snowflake-1" /></svg>
+                    </div>
+                    <div id="ice-burst-container" class="absolute inset-0 pointer-events-none flex items-center justify-center"></div>
+                  </div>
+
+                  <!-- Tờ giấy kết quả hiện Tên Nhân Vật Random + Thông Điệp -->
+                  <div id="healing-paper-reveal" class="hidden absolute inset-4 z-30 torn-paper-wrap p-5 flex flex-col items-center justify-center text-center transition-all duration-500">
+                    <div class="torn-paper-bg"></div>
+                    <div class="torn-paper-content">
+                      <span id="healing-random-char" class="inline-block px-3.5 py-1 rounded-full bg-journaldeep text-papercream font-ui font-bold text-xs mb-1 shadow-sm">
+                        ❄️ Nhân vật đồng hành: Koly
+                      </span>
+                      <svg class="w-32 h-4 mx-auto text-tealaccent my-1"><use href="#botanical-divider" /></svg>
+                      <p id="healing-quote-output" class="font-journal italic font-bold text-xl sm:text-2xl text-inknavy mt-1 px-3 leading-snug"></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex items-center justify-center gap-3">
+                  <button id="btn-throw-snow" type="button" class="btn-journal px-7 py-2.5 text-xs sm:text-sm">Ném Cầu Tuyết Sưởi Ấm Băng</button>
+                  <button id="btn-reset-ice-game" type="button" class="btn-journal-light px-5 py-2.5 text-xs sm:text-sm">Chơi lại</button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- TRANG 4: HỘP THƯ YÊU THƯƠNG -->
+          <section id="sec-letters" class="journal-page-section hidden flex-1 flex flex-col justify-center">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-7 items-start my-auto">
+              <div class="lg:col-span-5 torn-paper-wrap torn-paper-Wrap-halo p-6 sm:p-7 relative">
+                <div class="torn-paper-bg"></div>
+                <div class="torn-paper-content">
+                  <div class="flex items-center gap-3.5">
+                    <div class="w-20 h-20 rounded-xl bg-white/80 border border-paperslot/50 flex items-center justify-center shrink-0 overflow-hidden">
+                      <svg class="w-16 h-16"><use href="#watercolor-mailbox" /></svg>
+                    </div>
+                    <div>
+                      <span class="font-ui font-bold text-[11px] uppercase tracking-wider text-tealaccent">Hộp thư yêu thương</span>
+                      <h2 class="font-journal italic font-bold text-2xl sm:text-3xl text-inknavy leading-tight">Tâm sự mỏng tí nào!!</h2>
+                      <p class="font-body text-xs text-inknavy/70">Gửi đôi dòng ấm áp tới Koly</p>
+                    </div>
+                  </div>
+
+                  <div id="flying-envelope-el" class="hidden absolute right-8 top-10 z-30 px-3 py-1.5 rounded-lg bg-white border border-inknavy font-journal italic text-xs shadow-md">
+                    Lá thư đang bay đi...
+                  </div>
+
+                  <form id="love-letter-form" class="mt-4 space-y-3">
+                    <div>
+                      <div class="flex items-center justify-between mb-1">
+                        <label class="font-ui font-bold text-xs text-inknavy">Tên hoặc biệt danh</label>
+                        <label class="inline-flex items-center gap-1.5 font-ui font-bold text-xs text-tealaccent cursor-pointer">
+                          <input id="letter-anon-check" type="checkbox" class="rounded" />
+                          <span>Gửi ẩn danh</span>
+                        </label>
+                      </div>
+                      <input id="letter-sender-input" type="text" maxlength="40" placeholder="Nhập tên của bạn..." class="w-full px-3.5 py-2 rounded-lg bg-white border border-paperslot text-xs focus:outline-none" />
+                    </div>
+                    <div>
+                      <label class="font-ui font-bold text-xs text-inknavy block mb-1">Lời nhắn gửi</label>
+                      <textarea id="letter-body-input" rows="4" required maxlength="800" placeholder="Viết lời tâm sự của bạn vào trang giấy này..." class="w-full px-3.5 py-2 rounded-lg bg-white border border-paperslot text-xs focus:outline-none"></textarea>
+                    </div>
+                    <button type="submit" class="w-full btn-journal py-2.5 text-xs sm:text-sm">Gửi Tâm Thư Vào Hòm Thư</button>
+                  </form>
+                </div>
+              </div>
+
+              <div class="lg:col-span-7 torn-paper-wrap torn-paper-Wrap-halo p-6 sm:p-7">
+                <div class="torn-paper-bg"></div>
+                <div class="torn-paper-content">
+                  <div class="flex items-center justify-between pb-2 border-b border-paperslot/40">
+                    <div>
+                      <h3 class="font-journal italic font-bold text-2xl text-inknavy">Những Trang Thư Nổi Bật</h3>
+                      <p class="font-body text-xs text-inknavy/70">Những lời nhắn ấm áp được ghim trên sổ tay</p>
+                    </div>
+                    <span id="letters-count-pill" class="px-3 py-1 rounded-full bg-journaldeep text-papercream font-ui font-bold text-xs">0 lá thư</span>
+                  </div>
+                  <div id="featured-letters-grid" class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3.5 max-h-[340px] overflow-y-auto pr-1"></div>
+                  <div id="featured-letters-empty" class="py-12 text-center font-journal italic text-base text-inknavy/65">
+                    "Every thought has its own kind of beauty" — Hãy là người đầu tiên gửi thư nhé.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+        <footer class="relative z-20 pt-3 border-t border-white/15 flex flex-col sm:flex-row items-center justify-between gap-2 text-outericy/80 font-journal italic text-sm">
+          <span>"A cozy corner for thoughts that wander"</span>
+          <span>Được tạo nên từ những câu chuyện, một chút tuyết và thật nhiều yêu thương. ♡</span>
+        </footer>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- STICKER DONATE GÓC PHẢI DƯỚI -->
+  <div class="fixed bottom-4 right-4 z-40">
+    <button id="btn-open-donate-popup" type="button" class="torn-paper-wrap px-4 py-2.5 flex items-center gap-2.5 shadow-xl hover:-translate-y-1 transition cursor-pointer">
+      <div class="torn-paper-bg"></div>
+      <div class="torn-paper-content flex items-center gap-2.5">
+        <svg class="w-6 h-6 text-tealaccent"><use href="#snowflake-1" /></svg>
+        <div class="text-left">
+          <span class="block font-ui font-bold text-[10px] uppercase tracking-wider text-tealaccent">Góc nhỏ yêu thương</span>
+          <span class="block font-journal italic font-bold text-base text-inknavy leading-none">Một chút yêu thương ♡</span>
+        </div>
+      </div>
+    </button>
+  </div>
+
+  <!-- MODAL CHI TIẾT NHÂN VẬT -->
+  <div id="character-modal" class="hidden fixed inset-0 z-50 bg-[#0A2233]/80 backdrop-blur-sm p-3 sm:p-6 overflow-y-auto flex items-center justify-center">
+    <div class="journal-outer-shell w-full max-w-4xl my-auto">
+      <div class="journal-watercolor-page p-5 sm:p-7 max-h-[90vh] overflow-y-auto">
+        <div class="journal-speckles-overlay"></div>
+
+        <div class="relative z-10 flex flex-wrap items-center justify-between gap-3 pb-4 mb-5 border-b border-white/20">
+          <div class="flex items-center gap-3">
+            <h2 id="modal-char-title" class="font-journal italic font-bold text-3xl text-papercream"></h2>
+            <button id="btn-play-char-mp3" type="button" class="px-3 py-1 rounded-lg bg-white/15 hover:bg-white/25 border border-white/30 text-papercream font-ui font-bold text-xs flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              <span id="modal-char-sound-label">Phát nhạc nhân vật (.mp3)</span>
+            </button>
+          </div>
+          <div class="flex items-center gap-2">
+            <!-- NÚT SỬA NHÂN VẬT (ẨN 100% VỚI USER, CHỈ HIỆN KHI BẤM SHIFT + H) -->
+            <button id="btn-edit-this-char" type="button" class="hidden host-only btn-journal-light px-3 py-1 text-xs">
+              Sửa / Chèn Ảnh & Sound
+            </button>
+            <button id="btn-close-char-modal" type="button" class="px-3 py-1 rounded-lg bg-white/15 hover:bg-white/25 text-papercream font-ui font-bold text-xs">Đóng</button>
+          </div>
+        </div>
+
+        <div class="relative z-10 grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
+          <div class="md:col-span-5 torn-paper-wrap p-4 text-center">
+            <div class="torn-paper-bg"></div>
+            <div class="torn-paper-content">
+              <div class="w-full aspect-[3/4] rounded-lg overflow-hidden border border-paperslot/50 bg-outericy/50">
+                <img id="modal-char-avatar" alt="Avatar" class="w-full h-full object-cover" />
+              </div>
+              <p id="modal-char-tagline" class="mt-3 font-journal italic text-lg text-inknavy"></p>
+              <svg class="w-36 h-5 mx-auto text-tealaccent mt-0.5"><use href="#botanical-divider" /></svg>
+            </div>
+          </div>
+
+          <div class="md:col-span-7 torn-paper-wrap p-5 sm:p-6">
+            <div class="torn-paper-bg"></div>
+            <div class="torn-paper-content">
+              <div class="flex flex-wrap items-center gap-1.5 pb-3 border-b border-paperslot/40">
+                <button type="button" data-char-box="box-story" class="char-box-tab px-3 py-1 rounded-lg bg-journaldeep text-papercream font-ui font-bold text-xs">1. Câu Chuyện</button>
+                <button type="button" data-char-box="box-profile" class="char-box-tab px-3 py-1 rounded-lg bg-paperslot/30 text-inknavy font-ui font-bold text-xs">2. Hồ Sơ</button>
+                <button type="button" data-char-box="box-links" class="char-box-tab px-3 py-1 rounded-lg bg-paperslot/30 text-inknavy font-ui font-bold text-xs">3. Liên Kết</button>
+                <button type="button" data-char-box="box-comments" class="char-box-tab px-3 py-1 rounded-lg bg-paperslot/30 text-inknavy font-ui font-bold text-xs">4. Lưu Bút (<span id="modal-cmt-total">0</span>)</button>
+              </div>
+
+              <div id="box-story" class="char-box-panel mt-4">
+                <div id="modal-char-story" class="p-4 rounded-xl bg-white/85 border border-paperslot/40 max-h-[320px] overflow-y-auto font-body text-sm text-inknavy leading-relaxed whitespace-pre-line"></div>
+              </div>
+              <div id="box-profile" class="char-box-panel hidden mt-4">
+                <div id="modal-char-profile" class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 max-h-[320px] overflow-y-auto pr-1"></div>
+              </div>
+              <div id="box-links" class="char-box-panel hidden mt-4">
+                <div id="modal-char-links" class="space-y-2.5 max-h-[320px] overflow-y-auto"></div>
+              </div>
+              <div id="box-comments" class="char-box-panel hidden mt-4">
+                <form id="char-comment-form" class="flex flex-col sm:flex-row gap-2 mb-3">
+                  <input id="cmt-author-input" type="text" required maxlength="30" placeholder="Tên bạn..." class="sm:w-1/3 px-3 py-1.5 rounded-lg bg-white border border-paperslot text-xs" />
+                  <input id="cmt-content-input" type="text" required maxlength="300" placeholder="Viết lưu bút cho nhân vật..." class="flex-1 px-3 py-1.5 rounded-lg bg-white border border-paperslot text-xs" />
+                  <button type="submit" class="btn-journal px-4 py-1.5 text-xs shrink-0">Gửi</button>
+                </form>
+                <div id="modal-comments-container" class="space-y-2 max-h-[240px] overflow-y-auto pr-1"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL MỞ KHÓA LIÊN KẾT BÍ MẬT -->
+  <div id="secret-link-modal" class="hidden fixed inset-0 z-[60] bg-[#0A2233]/85 backdrop-blur-sm p-4 flex items-center justify-center">
+    <div class="torn-paper-wrap w-full max-w-md p-6 sm:p-7 text-center">
+      <div class="torn-paper-bg"></div>
+      <div class="torn-paper-content relative">
+        <button id="btn-close-secret-modal" type="button" class="absolute -top-1 right-0 px-2.5 py-0.5 rounded bg-paperslot/30 font-ui font-bold text-xs">X</button>
+        <h3 class="font-journal italic font-bold text-2xl text-inknavy">Bí mật nhỏ này đang được khóa!</h3>
+        <svg class="w-36 h-5 mx-auto text-tealaccent my-1"><use href="#botanical-divider" /></svg>
+        <p id="secret-modal-link-name" class="font-ui font-bold text-xs text-tealaccent"></p>
+
+        <div id="secret-pass-section" class="mt-4 space-y-3">
+          <input id="secret-pass-field" type="password" placeholder="Nhập mật khẩu để mở khóa..." class="w-full px-3.5 py-2 rounded-lg bg-white border border-paperslot text-center text-xs" />
+          <div class="flex gap-2">
+            <button id="btn-submit-secret-pass" type="button" class="btn-journal flex-1 py-2 text-xs">Mở Khóa</button>
+            <button id="btn-show-fb-unlock" type="button" class="btn-journal-light flex-1 py-2 text-xs">Nhận mật khẩu</button>
+          </div>
+        </div>
+
+        <div id="secret-fb-instruction" class="hidden mt-4 p-4 rounded-xl bg-white border border-paperslot text-left space-y-3">
+          <p class="font-body text-xs text-inknavy leading-relaxed">
+            Nhấn vào nút bên dưới để ghé thăm và <strong>Theo dõi (Follow) Facebook của Koly</strong>. Ngay khi bạn quay trở lại tab này, liên kết sẽ tự động mở khóa!
+          </p>
+          <a id="btn-visit-fb-to-unlock" href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="btn-journal w-full py-2 text-xs block text-center">
+            Ghé Facebook Koly & Mở Khóa Tự Động
+          </a>
+        </div>
+
+        <div id="secret-unlocked-view" class="hidden mt-4 p-4 rounded-xl bg-white border-2 border-tealaccent space-y-2.5">
+          <p id="secret-thankyou-banner" class="font-ui font-bold text-sm text-journaldeep">❄️Koly then kiu tình iu đã phô lô❄️</p>
+          <div id="secret-revealed-url" class="p-2 rounded bg-outericy/50 border border-paperslot text-xs break-all"></div>
+          <div class="flex gap-2">
+            <button id="btn-copy-revealed-url" type="button" class="btn-journal-light flex-1 py-1.5 text-xs">Sao chép</button>
+            <a id="btn-open-revealed-url" href="#" target="_blank" rel="noopener noreferrer" class="btn-journal flex-1 py-1.5 text-xs text-center">Mở liên kết</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL DONATE -->
+  <div id="donate-popup-modal" class="hidden fixed inset-0 z-50 bg-[#0A2233]/80 backdrop-blur-sm p-4 flex items-center justify-center">
+    <div class="torn-paper-wrap w-full max-w-md p-6 sm:p-7 text-center">
+      <div class="torn-paper-bg"></div>
+      <div class="torn-paper-content relative">
+        <button id="btn-close-donate-popup" type="button" class="absolute -top-1 right-0 px-2.5 py-0.5 rounded bg-paperslot/30 font-ui font-bold text-xs">X</button>
+        <span class="font-ui font-bold text-[11px] uppercase tracking-wider text-tealaccent">Góc nhỏ yêu thương</span>
+        <h3 class="font-journal italic font-bold text-3xl text-inknavy mt-0.5">Một chút yêu thương ♡</h3>
+        <svg class="w-36 h-5 mx-auto text-tealaccent my-1"><use href="#botanical-divider" /></svg>
+        <p class="font-body text-xs text-inknavy/80">"Nếu bạn thích thế giới nhỏ bé này, có thể gửi lại một chút ấm áp ở đây nhé!"</p>
+
+        <div class="mt-4 mx-auto w-48 h-48 rounded-xl bg-white border border-paperslot p-2 flex items-center justify-center overflow-hidden">
+          <img id="donate-qr-image" alt="QR Ủng hộ" class="hidden w-full h-full object-contain" />
+          <p id="donate-qr-placeholder" class="text-xs text-inknavy/50 px-3">Bạn có thể tải ảnh mã QR lên trong mục Quản trị</p>
+        </div>
+
+        <div class="mt-4 p-3.5 rounded-xl bg-white/90 border border-paperslot/60 text-left space-y-1.5 text-xs">
+          <div class="flex justify-between"><span>Ngân hàng / Ví:</span><strong id="donate-bank-text">Vietcombank</strong></div>
+          <div class="flex justify-between"><span>Chủ tài khoản:</span><strong id="donate-holder-text">KOLY</strong></div>
+          <div class="flex justify-between items-center pt-1.5 border-t border-paperslot/30">
+            <div><span class="block">Số tài khoản:</span><strong id="donate-number-text" class="text-sm text-tealaccent">0123456789</strong></div>
+            <button id="btn-copy-donate-acc" type="button" class="btn-journal-light px-3 py-1 text-xs">Sao chép</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL QUẢN TRỊ HOST (MỞ BẰNG PHÍM TẮT BÍ MẬT SHIFT + H) -->
+  <div id="admin-dashboard-modal" class="hidden fixed inset-0 z-50 bg-[#0A2233]/85 backdrop-blur-sm p-3 sm:p-6 overflow-y-auto flex items-start justify-center">
+    <div class="torn-paper-wrap w-full max-w-5xl my-4 p-5 sm:p-8">
+      <div class="torn-paper-bg"></div>
+      <div class="torn-paper-content">
+
+        <!-- MÀN HÌNH 1: BẮT BUỘC ĐĂNG NHẬP EMAIL & MẬT KHẨU HOST -->
+        <div id="host-login-gate" class="py-8 max-w-md mx-auto text-center space-y-4">
+          <svg class="w-12 h-12 mx-auto text-tealaccent"><use href="#snowflake-1" /></svg>
+          <h2 class="font-journal italic font-bold text-3xl text-inknavy">Xác Thực Chủ Sổ Tay (Host)</h2>
+          <svg class="w-36 h-5 mx-auto text-tealaccent my-1"><use href="#botanical-divider" /></svg>
+          <p class="font-body text-xs text-inknavy/75">
+            Vui lòng đăng nhập bằng Email và Mật khẩu quản trị viên (Firebase Authentication) để mở khóa quyền chỉnh sửa sổ tay.
+          </p>
+          <form id="host-email-login-form" class="space-y-3 text-left bg-white/85 p-5 rounded-xl border border-paperslot">
+            <div>
+              <label class="font-ui font-bold text-xs text-inknavy block mb-1">Email Quản trị (Host)</label>
+              <input id="host-login-email" type="email" required placeholder="Nhập email của bạn..."
+                     class="w-full px-3.5 py-2 rounded-lg bg-white border border-paperslot text-xs focus:outline-none" />
+            </div>
+            <div>
+              <label class="font-ui font-bold text-xs text-inknavy block mb-1">Mật khẩu</label>
+              <input id="host-login-password" type="password" required placeholder="••••••••"
+                     class="w-full px-3.5 py-2 rounded-lg bg-white border border-paperslot text-xs focus:outline-none" />
+            </div>
+            <div class="flex items-center gap-2 pt-1">
+              <button type="submit" class="btn-journal flex-1 py-2.5 text-xs">Đăng Nhập Mở Khóa Host</button>
+              <button id="btn-cancel-host-login" type="button" class="btn-journal-light px-4 py-2.5 text-xs">Đóng</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- MÀN HÌNH 2: BẢNG ĐIỀU KHIỂN (CHỈ HIỆN SAU KHI ĐĂNG NHẬP EMAIL THÀNH CÔNG) -->
+        <div id="host-authenticated-view" class="hidden">
+          <div class="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-paperslot/50">
+            <div>
+              <h2 class="font-journal italic font-bold text-3xl text-inknavy">Quản Trị Sổ Tay Mùa Đông (Host)</h2>
+              <p id="host-logged-email-label" class="font-ui text-xs text-tealaccent">Đã xác thực quyền Host</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <button id="btn-lock-host-view" type="button" class="btn-journal-light px-3 py-1.5 text-xs">Ẩn nút Host (Xem như User)</button>
+              <button id="btn-logout-host-email" type="button" class="px-3 py-1.5 rounded-lg bg-red-100 text-red-700 font-ui font-bold text-xs">Đăng xuất Email</button>
+              <button id="btn-close-admin-modal" type="button" class="btn-journal px-4 py-1.5 text-xs">Đóng</button>
+            </div>
+          </div>
+
+          <div class="mt-4 flex flex-wrap gap-2 pb-3 border-b border-paperslot/40">
+          <button type="button" data-adm-panel="adm-panel-chars" class="adm-nav-btn btn-journal px-3.5 py-1.5 text-xs">1. Nhân Vật (Ảnh & Sound .MP3)</button>
+          <button type="button" data-adm-panel="adm-panel-comm" class="adm-nav-btn btn-journal-light px-3.5 py-1.5 text-xs">2. Mục Commission Viết Char</button>
+          <button type="button" data-adm-panel="adm-panel-sound" class="adm-nav-btn btn-journal-light px-3.5 py-1.5 text-xs">3. Nhạc Nền Chung & Hải Cẩu</button>
+          <button type="button" data-adm-panel="adm-panel-quotes" class="adm-nav-btn btn-journal-light px-3.5 py-1.5 text-xs">4. Thông Điệp Game & Tâm Thư</button>
+          <button type="button" data-adm-panel="adm-panel-backup" class="adm-nav-btn btn-journal-light px-3.5 py-1.5 text-xs">5. Sao Lưu JSON</button>
+        </div>
+
+        <!-- PANEL 1: NHÂN VẬT -->
+        <div id="adm-panel-chars" class="adm-panel-view mt-5 grid grid-cols-1 lg:grid-cols-12 gap-6">
+          <div class="lg:col-span-4 bg-white/85 rounded-xl border border-paperslot/50 p-4">
+            <div class="flex items-center justify-between mb-3">
+              <h4 class="font-journal italic font-bold text-xl text-inknavy">Danh sách Nhân vật</h4>
+              <button id="btn-adm-create-new-char" type="button" class="btn-journal px-3 py-1 text-xs">+ Thêm mới</button>
+            </div>
+            <div id="adm-characters-list" class="space-y-2 max-h-[430px] overflow-y-auto"></div>
+          </div>
+
+          <div class="lg:col-span-8 bg-white/90 rounded-xl border border-paperslot/50 p-5 max-h-[500px] overflow-y-auto">
+            <form id="adm-character-form" class="space-y-4">
+              <input id="f-char-id" type="hidden" />
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 p-3.5 rounded-xl bg-outericy/40 border border-paperslot">
+                <div>
+                  <label class="font-ui font-bold text-xs text-inknavy block mb-1">1. Chọn Ảnh Nhân Vật từ máy:</label>
+                  <input id="f-char-avatar-file" type="file" accept="image/*" class="block w-full text-xs mb-1.5 file:mr-2 file:py-1 file:px-3 file:rounded-lg file:border-0 file:bg-journaldeep file:text-white cursor-pointer" />
+                  <input id="f-char-avatar-url" type="text" placeholder="Hoặc dán link ảnh nhân vật..." class="w-full px-3 py-1.5 rounded-lg bg-white border border-paperslot text-xs" />
+                </div>
+                <div>
+                  <label class="font-ui font-bold text-xs text-inknavy block mb-1">2. Chèn Sound / Nhạc riêng (.mp3):</label>
+                  <input id="f-char-mp3-file" type="file" accept="audio/*" class="block w-full text-xs mb-1.5 file:mr-2 file:py-1 file:px-3 file:rounded-lg file:border-0 file:bg-tealaccent file:text-white cursor-pointer" />
+                  <input id="f-char-mp3-url" type="text" placeholder="Hoặc dán link file .mp3..." class="w-full px-3 py-1.5 rounded-lg bg-white border border-paperslot text-xs" />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <input id="f-char-name" type="text" required placeholder="Tên nhân vật *" class="w-full px-3 py-2 rounded-lg bg-white border border-paperslot text-xs" />
+                <input id="f-char-tagline" type="text" placeholder="Câu trích dẫn ngắn dưới tên (Tagline)" class="w-full px-3 py-2 rounded-lg bg-white border border-paperslot text-xs" />
+              </div>
+
+              <textarea id="f-char-story" rows="4" placeholder="Ô 1 — Câu chuyện nhân vật (Backstory)" class="w-full px-3 py-2 rounded-lg bg-white border border-paperslot text-xs"></textarea>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                <input id="f-prof-name" type="text" placeholder="Họ tên / Biệt danh" class="px-3 py-1.5 rounded-lg bg-white border border-paperslot text-xs" />
+                <input id="f-prof-age" type="text" placeholder="Tuổi / Ngày sinh / Cung hoàng đạo" class="px-3 py-1.5 rounded-lg bg-white border border-paperslot text-xs" />
+                <input id="f-prof-gender" type="text" placeholder="Giới tính / Quốc tịch" class="px-3 py-1.5 rounded-lg bg-white border border-paperslot text-xs" />
+                <input id="f-prof-height" type="text" placeholder="Chiều cao / Ngoại hình" class="px-3 py-1.5 rounded-lg bg-white border border-paperslot text-xs" />
+                <input id="f-prof-role" type="text" placeholder="Nghề nghiệp / Vai trò" class="px-3 py-1.5 rounded-lg bg-white border border-paperslot text-xs" />
+                <input id="f-prof-mbti" type="text" placeholder="MBTI / Tính cách" class="px-3 py-1.5 rounded-lg bg-white border border-paperslot text-xs" />
+                <input id="f-prof-likes" type="text" placeholder="Sở thích / Sở ghét" class="px-3 py-1.5 rounded-lg bg-white border border-paperslot text-xs" />
+                <input id="f-prof-strength" type="text" placeholder="Điểm mạnh / Điểm yếu" class="px-3 py-1.5 rounded-lg bg-white border border-paperslot text-xs" />
+              </div>
+              <textarea id="f-prof-custom" rows="2" placeholder="Các trường thêm tùy ý (Mỗi dòng: Tên mục: Nội dung)" class="w-full px-3 py-1.5 rounded-lg bg-white border border-paperslot text-xs"></textarea>
+              <input id="f-char-fb" type="text" placeholder="Link Facebook của bạn (Để khách bấm Follow mở khóa)" class="w-full px-3 py-1.5 rounded-lg bg-white border border-paperslot text-xs" />
+              <textarea id="f-char-links" rows="2" placeholder="Mỗi dòng 1 link: Tên liên kết | https://... | mật_khẩu_nếu_khóa" class="w-full px-3 py-1.5 rounded-lg bg-white border border-paperslot text-xs"></textarea>
+
+              <div class="flex items-center gap-3 pt-2">
+                <button type="submit" class="btn-journal px-6 py-2 text-xs">Lưu Nhân Vật</button>
+                <button id="btn-adm-delete-char" type="button" class="hidden btn-journal-light px-4 py-2 text-xs text-red-700">Xóa nhân vật này</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- PANEL 2: COMMISSION -->
+        <div id="adm-panel-comm" class="adm-panel-view hidden mt-5 bg-white/90 rounded-xl border border-paperslot/50 p-5 max-w-2xl space-y-3">
+          <h4 class="font-journal italic font-bold text-2xl text-inknavy">Cài Đặt Trang Commission Viết Char</h4>
+          <input id="adm-comm-file" type="file" accept="image/*" class="block w-full text-xs file:mr-2 file:py-1 file:px-3 file:rounded-lg file:border-0 file:bg-journaldeep file:text-white" />
+          <input id="adm-comm-img-url" type="text" placeholder="Hoặc dán link ảnh..." class="w-full px-3 py-1.5 rounded-lg bg-white border border-paperslot text-xs" />
+          <input id="adm-comm-link" type="text" placeholder="Đường dẫn (Link) Commission có nút Copy..." class="w-full px-3 py-1.5 rounded-lg bg-white border border-paperslot text-xs" />
+          <textarea id="adm-comm-note" rows="2" placeholder="Ghi chú ngắn..." class="w-full px-3 py-1.5 rounded-lg bg-white border border-paperslot text-xs"></textarea>
+          <button id="btn-adm-save-comm" type="button" class="btn-journal px-5 py-2 text-xs">Lưu Trang Commission</button>
+        </div>
+
+        <!-- PANEL 3: SOUND CHUNG & DONATE -->
+        <div id="adm-panel-sound" class="adm-panel-view hidden mt-5 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <form id="adm-sound-mascot-form" class="bg-white/90 rounded-xl border border-paperslot/50 p-5 space-y-3">
+            <h4 class="font-journal italic font-bold text-2xl text-inknavy">Nhạc Nền Chung (.MP3) & Ảnh Hải Cẩu</h4>
+            <input id="adm-global-mp3-file" type="file" accept="audio/*" class="block w-full text-xs file:mr-2 file:py-1 file:px-3 file:rounded-lg file:border-0 file:bg-tealaccent file:text-white" />
+            <input id="adm-global-mp3-url" type="text" placeholder="Hoặc dán link file .mp3 nhạc nền..." class="w-full px-3 py-1.5 rounded-lg bg-white border border-paperslot text-xs" />
+            <input id="adm-seal-file" type="file" accept="image/*" class="block w-full text-xs file:mr-2 file:py-1 file:px-3 file:rounded-lg file:border-0 file:bg-journaldeep file:text-white" />
+            <input id="adm-seal-url" type="text" placeholder="Hoặc dán link ảnh Hải Cẩu..." class="w-full px-3 py-1.5 rounded-lg bg-white border border-paperslot text-xs" />
+            <button type="submit" class="btn-journal px-5 py-2 text-xs">Lưu Nhạc Nền & Linh Vật</button>
+          </form>
+
+          <form id="adm-donate-config-form" class="bg-white/90 rounded-xl border border-paperslot/50 p-5 space-y-3">
+            <h4 class="font-journal italic font-bold text-2xl text-inknavy">Góc Nhỏ Yêu Thương (QR Donate)</h4>
+            <input id="adm-qr-file" type="file" accept="image/*" class="block w-full text-xs file:mr-2 file:py-1 file:px-3 file:rounded-lg file:border-0 file:bg-journaldeep file:text-white" />
+            <input id="adm-qr-url" type="text" placeholder="Hoặc dán link ảnh QR..." class="w-full px-3 py-1.5 rounded-lg bg-white border border-paperslot text-xs" />
+            <input id="adm-bank-name" type="text" placeholder="Tên Ngân hàng / Ví" class="w-full px-3 py-1.5 rounded-lg bg-white border border-paperslot text-xs" />
+            <input id="adm-bank-holder" type="text" placeholder="Tên chủ tài khoản" class="w-full px-3 py-1.5 rounded-lg bg-white border border-paperslot text-xs" />
+            <input id="adm-bank-num" type="text" placeholder="Số tài khoản" class="w-full px-3 py-1.5 rounded-lg bg-white border border-paperslot text-xs" />
+            <button type="submit" class="btn-journal px-5 py-2 text-xs">Lưu Cấu Hình Donate</button>
+          </form>
+        </div>
+
+        <!-- PANEL 4: CÂU NÓI GAME & TÂM THƯ -->
+        <div id="adm-panel-quotes" class="adm-panel-view hidden mt-5 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-white/90 rounded-xl border border-paperslot/50 p-5 space-y-3">
+            <h4 class="font-journal italic font-bold text-2xl text-inknavy">Thông Điệp Game Hải Cẩu Ném Tuyết</h4>
+            <form id="adm-add-quote-form" class="flex gap-2">
+              <input id="adm-new-quote-text" type="text" required placeholder="Nhập câu nói chữa lành mới..." class="flex-1 px-3 py-1.5 rounded-lg bg-white border border-paperslot text-xs" />
+              <button type="submit" class="btn-journal px-4 py-1.5 text-xs">+ Thêm</button>
+            </form>
+            <div id="adm-quotes-container" class="space-y-2 max-h-64 overflow-y-auto"></div>
+          </div>
+          <div class="bg-white/90 rounded-xl border border-paperslot/50 p-5 space-y-3">
+            <h4 class="font-journal italic font-bold text-2xl text-inknavy">Quản Lý Hộp Thư Yêu Thương</h4>
+            <div id="adm-letters-container" class="space-y-2 max-h-72 overflow-y-auto"></div>
+          </div>
+        </div>
+
+        <!-- PANEL 5: SAO LƯU JSON -->
+        <div id="adm-panel-backup" class="adm-panel-view hidden mt-5 bg-white/90 rounded-xl border border-paperslot/50 p-5 max-w-xl space-y-3">
+          <h4 class="font-journal italic font-bold text-2xl text-inknavy">Sao Lưu & Khôi Phục Dữ Liệu Sổ Tay (.JSON)</h4>
+          <div class="flex flex-wrap gap-3 pt-2">
+            <button id="btn-export-backup" type="button" class="btn-journal px-5 py-2 text-xs">Tải xuống File Backup (.json)</button>
+            <label class="btn-journal-light px-5 py-2 text-xs cursor-pointer">
+              Khôi phục từ File (.json)
+              <input id="input-import-backup" type="file" accept=".json" class="hidden" />
+            </label>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="toast-stack" class="fixed top-5 right-5 z-[9999] space-y-2 pointer-events-none"></div>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import { getAuth, signInAnonymously, signInWithEmailAndPassword, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+    import { getFirestore, collection, doc, setDoc, addDoc, deleteDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+    const dismissLoader = () => {
+      const loader = document.getElementById('loading-screen');
+      if (loader) {
+        loader.classList.add('opacity-0', 'pointer-events-none');
+        setTimeout(() => { loader.style.display = 'none'; }, 450);
+      }
+    };
+    setTimeout(dismissLoader, 750);
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyD3lWU_86-rx8LkgfMzjlJlBZnR4eA7A_A",
+      authDomain: "keep-on-loving-you.firebaseapp.com",
+      projectId: "keep-on-loving-you",
+      storageBucket: "keep-on-loving-you.firebasestorage.app",
+      messagingSenderId: "671386585774",
+      appId: "1:671386585774:web:f7b0c8e5c6ba064de0bb3f"
+    };
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const db = getFirestore(app);
+    signInAnonymously(auth).catch(() => {});
+
+    const STORAGE_KEY = "koly_winter_journal_v6";
+    const defaultSampleCharacters = [
+      {
+        id: "sample_char_1",
+        name: "Koly — Người Giữ Đèn Mùa Đông",
+        tagline: "Every thought has its own kind of beauty",
+        avatarUrl: "",
+        mp3Url: "",
+        backstory: "Giữa những trang sổ màu nước xanh thẫm của đêm đông, Koly lưu giữ những mẩu chuyện nhỏ, những lá thư chưa kịp gửi và hơi ấm dịu dàng cho bất kỳ ai ghé qua.",
+        profName: "Koly",
+        profAge: "19 • Cung Song Ngư",
+        profGender: "Nữ",
+        profHeight: "1m60 • Khăn choàng xanh lam",
+        profRole: "Người viết chuyện & Lưu trữ ký ức",
+        profMbti: "INFP • Dịu dàng, trầm lắng",
+        profLikes: "Tuyết đầu mùa, sổ tay màu nước, trà ấm",
+        profStrength: "Biết lắng nghe và sẻ chia",
+        profCustom: "Màu sắc đại diện: Xanh lam mùa đông\nLinh vật: Hải cẩu mũ len",
+        fbUrl: "https://facebook.com",
+        linksRaw: "Trang cá nhân chính thức | https://facebook.com | \nNhật ký bí mật đêm tuyết | https://keep-on-loving-you.firebaseapp.com | koly"
+      },
+      {
+        id: "sample_char_2",
+        name: "Noel — Lữ Khách Qua Đồi Tuyết",
+        tagline: "A cozy corner for thoughts that wander",
+        avatarUrl: "",
+        mp3Url: "",
+        backstory: "Một lữ khách mang theo chiếc đèn lồng nhỏ đi qua những cánh rừng thông phủ tuyết trắng xóa. Mỗi bước chân đều để lại một giai điệu êm đềm trên trang giấy.",
+        profName: "Noel",
+        profAge: "21 • Cung Ma Kết",
+        profGender: "Nam",
+        profHeight: "1m78 • Áo khoác dạ màu khói",
+        profRole: "Người đưa thư mùa đông",
+        profMbti: "INFJ • Ấm áp, điềm tĩnh",
+        profLikes: "Cacao nóng, tiếng tuyết rơi đêm khuya",
+        profStrength: "Luôn giữ lời hứa",
+        profCustom: "Vật bất ly thân: Đồng hồ bỏ túi bạc",
+        fbUrl: "https://facebook.com",
+        linksRaw: "Hồ sơ chi tiết | https://facebook.com | "
+      }
+    ];
+
+    let state = JSON.parse(localStorage.getItem(STORAGE_KEY) || "null") || {
+      siteConfig: { globalMp3Url: "", sealMascotUrl: "", qrUrl: "", bankName: "Vietcombank", bankHolder: "KOLY", bankNum: "0123456789" },
+      commission: {
+        imageUrl: "",
+        linkUrl: "https://facebook.com/",
+        note: "Sao chép đường dẫn bên dưới hoặc nhấn Mở liên kết để xem chi tiết và nhắn tin đặt Commission Viết Char cùng Koly."
+      },
+      characters: defaultSampleCharacters,
+      quotes: [
+        "Cảm ơn bạn vì đã dịu dàng với thế giới và với chính mình ngày hôm nay nhé! ❄️",
+        "Giữa mùa đông lạnh giá, sự hiện diện của bạn chính là hơi ấm tuyệt vời nhất. ♡",
+        "Mỗi ý nghĩ và câu chuyện nhỏ của bạn đều mang một vẻ đẹp rất riêng.",
+        "Không sao đâu nếu hôm nay bạn hơi mệt, hãy nghỉ ngơi trong góc nhỏ này nhé!",
+        "Mọi bông tuyết đều rơi đúng thời điểm, và những điều tốt đẹp cũng đang đến với bạn."
+      ],
+      letters: [],
+      comments: []
+    };
+
+    function persistState() {
+      try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch (e) {}
+    }
+
+    function notify(msg) {
+      const stack = document.getElementById('toast-stack');
+      const item = document.createElement('div');
+      item.className = "torn-paper-wrap px-4 py-2.5 shadow-lg pointer-events-auto";
+      item.innerHTML = `<div class="torn-paper-bg"></div><div class="torn-paper-content font-ui font-bold text-xs text-inknavy">${msg}</div>`;
+      stack.appendChild(item);
+      setTimeout(() => item.remove(), 2900);
+    }
+
+    // CHẾ ĐỘ ẨN SẠCH NÚT HOST VỚI USER — CHỈ MỞ BẰNG PHÍM TẮT SHIFT + H
+    // CHẾ ĐỘ BẢO MẬT 2 LỚP: SHIFT + H -> ĐĂNG NHẬP EMAIL FIREBASE MỚI MỞ QUYỀN HOST
+    let isHostActive = false;
+    let isEmailAuthenticated = false;
+
+    onAuthStateChanged(auth, (user) => {
+      if (user && !user.isAnonymous) {
+        isEmailAuthenticated = true;
+        document.getElementById('host-login-gate').classList.add('hidden');
+        document.getElementById('host-authenticated-view').classList.remove('hidden');
+        document.getElementById('host-logged-email-label').textContent = `Host đang đăng nhập: ${user.email}`;
+      } else {
+        isEmailAuthenticated = false;
+        document.getElementById('host-login-gate').classList.remove('hidden');
+        document.getElementById('host-authenticated-view').classList.add('hidden');
+        document.querySelectorAll('.host-only').forEach(el => el.classList.add('hidden'));
+      }
+    });
+
+    function toggleHostMode(forceState) {
+      isHostActive = typeof forceState === 'boolean' ? forceState : !isHostActive;
+      if (isHostActive) {
+        document.getElementById('admin-dashboard-modal').classList.remove('hidden');
+        if (isEmailAuthenticated) {
+          document.querySelectorAll('.host-only').forEach(el => el.classList.remove('hidden'));
+          notify("Đã mở Chế độ Host!");
+        } else {
+          notify("Vui lòng đăng nhập Email Host để mở khóa quyền chỉnh sửa.");
+        }
+      } else {
+        document.querySelectorAll('.host-only').forEach(el => el.classList.add('hidden'));
+        document.getElementById('admin-dashboard-modal').classList.add('hidden');
+        notify("Đã ẩn toàn bộ nút Host! Hiện tại là giao diện của User.");
+      }
+    }
+
+    document.getElementById('host-email-login-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = document.getElementById('host-login-email').value.trim();
+      const pass = document.getElementById('host-login-password').value;
+      try {
+        await signInWithEmailAndPassword(auth, email, pass);
+        isEmailAuthenticated = true;
+        document.querySelectorAll('.host-only').forEach(el => el.classList.remove('hidden'));
+        notify("Đăng nhập Email Host thành công! Đã mở toàn bộ quyền chỉnh sửa.");
+      } catch (err) {
+        notify("Sai Email hoặc Mật khẩu Host! Vui lòng kiểm tra lại.");
+      }
+    });
+
+    document.getElementById('btn-cancel-host-login').addEventListener('click', () => {
+      document.getElementById('admin-dashboard-modal').classList.add('hidden');
+      isHostActive = false;
+    });
+
+    document.getElementById('btn-logout-host-email').addEventListener('click', async () => {
+      await signOut(auth);
+      await signInAnonymously(auth).catch(() => {});
+      toggleHostMode(false);
+      notify("Đã đăng xuất tài khoản Email Host.");
+    });
+
+    window.addEventListener('keydown', (e) => {
+      if (e.shiftKey && (e.key === 'H' || e.key === 'h')) {
+        const tag = (document.activeElement && document.activeElement.tagName) || '';
+        if (tag !== 'INPUT' && tag !== 'TEXTAREA') {
+          e.preventDefault();
+          toggleHostMode();
+        }
+      }
+    });
+
+    document.getElementById('btn-lock-host-view').addEventListener('click', () => toggleHostMode(false));
+
+    // BÔNG TUYẾT 6 CÁNH RƠI LƠ LỬNG
+    const snowLayer = document.getElementById('falling-snow-layer');
+    let snowActive = true;
+    function createCrystallineSnowflakes() {
+      snowLayer.innerHTML = "";
+      const symbols = ['#snowflake-1', '#snowflake-2', '#snowflake-3'];
+      for (let i = 0; i < 28; i++) {
+        const size = Math.floor(Math.random() * 13) + 10;
+        const svgEl = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+        svgEl.setAttribute("class", "falling-crystal text-white");
+        svgEl.style.width = `${size}px`;
+        svgEl.style.height = `${size}px`;
+        svgEl.style.left = `${Math.random() * 100}vw`;
+        svgEl.style.opacity = (Math.random() * 0.45 + 0.45).toFixed(2);
+        svgEl.style.animationDuration = `${(Math.random() * 9 + 9).toFixed(1)}s`;
+        svgEl.style.animationDelay = `${(Math.random() * -18).toFixed(1)}s`;
+        svgEl.innerHTML = `<use href="${symbols[i % 3]}"></use>`;
+        snowLayer.appendChild(svgEl);
+      }
+    }
+    createCrystallineSnowflakes();
+
+    document.getElementById('btn-toggle-snow').addEventListener('click', () => {
+      snowActive = !snowActive;
+      snowLayer.classList.toggle('hidden', !snowActive);
+      document.getElementById('snow-state-text').textContent = snowActive ? "Bật" : "Tắt";
+    });
+
+    // ÂM THANH (.MP3 THẬT + VOLUME SLIDER)
+    const mp3Player = document.getElementById('real-mp3-player');
+    const volSlider = document.getElementById('audio-volume-slider');
+    const volLabel = document.getElementById('audio-vol-percent');
+    const playLabel = document.getElementById('audio-play-label');
+    mp3Player.volume = 0.7;
+
+    volSlider.addEventListener('input', () => {
+      const v = Number(volSlider.value);
+      mp3Player.volume = v / 100;
+      volLabel.textContent = `${v}%`;
+    });
+
+    function playMp3Source(srcUrl, titleHint = "") {
+      if (!srcUrl) {
+        notify("Chưa gắn file nhạc .mp3!");
+        return;
+      }
+      if (mp3Player.getAttribute('src') !== srcUrl) {
+        mp3Player.setAttribute('src', srcUrl);
+      }
+      mp3Player.play().then(() => {
+        playLabel.textContent = "Nhạc: Bật";
+        if (titleHint) notify(`Đang phát nhạc: ${titleHint}`);
+      }).catch(() => notify("Không thể phát file .mp3 này."));
+    }
+
+    document.getElementById('btn-toggle-audio').addEventListener('click', () => {
+      if (!mp3Player.paused) {
+        mp3Player.pause();
+        playLabel.textContent = "Nhạc: Tắt";
+      } else {
+        const targetMp3 = (currentModalChar && currentModalChar.mp3Url) || state.siteConfig.globalMp3Url;
+        playMp3Source(targetMp3);
+      }
+    });
+
+    // CHUYỂN TAB SỔ TAY
+    document.querySelectorAll('.journal-tab-trigger').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetId = btn.dataset.journalTab;
+        document.querySelectorAll('.journal-page-section').forEach(sec => sec.classList.add('hidden'));
+        document.getElementById(targetId).classList.remove('hidden');
+        document.querySelectorAll('.journal-tab-trigger').forEach(b => b.classList.toggle('active', b.dataset.journalTab === targetId));
+      });
+    });
+
+    // HIỂN THỊ THẺ NHÂN VẬT GIẤY MÀU NƯỚC XÉ VIỀN SỜN
+    let currentModalChar = null;
+    document.getElementById('char-search-input').addEventListener('input', renderCharacterCards);
+
+    function renderCharacterCards() {
+      const grid = document.getElementById('characters-grid');
+      const kw = (document.getElementById('char-search-input').value || "").trim().toLowerCase();
+      const filtered = state.characters.filter(c => !kw || (c.name || "").toLowerCase().includes(kw));
+      grid.innerHTML = "";
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `<div class="col-span-full torn-paper-wrap max-w-md mx-auto p-8 text-center"><div class="torn-paper-bg"></div><div class="torn-paper-content"><h3 class="font-journal italic font-bold text-2xl text-inknavy">Chưa có nhân vật nào</h3></div></div>`;
+        return;
+      }
+
+      filtered.forEach((c, idx) => {
+        const card = document.createElement('div');
+        card.className = "torn-paper-wrap torn-paper-Wrap-halo p-5 sm:p-6 cursor-pointer hover:-translate-y-1.5 flex flex-col justify-between";
+        const hasAvatar = c.avatarUrl && c.avatarUrl.trim() !== "";
+        card.innerHTML = `
+          <div class="torn-paper-bg"></div>
+          <div class="torn-paper-content flex-1 flex flex-col justify-between">
+            <div>
+              <div class="text-center">
+                <span class="font-journal italic text-xs text-tealaccent">Section ${idx + 1}</span>
+                <h3 class="font-journal italic font-bold text-2xl text-inknavy leading-snug mt-0.5">${c.name}</h3>
+                <svg class="w-40 h-5 mx-auto text-inknavy/75 my-1"><use href="#botanical-divider" /></svg>
+              </div>
+              ${hasAvatar ? `
+                <div class="mt-2 w-full aspect-[4/4] rounded-lg overflow-hidden border border-paperslot/50 shadow-sm bg-outericy/40">
+                  <img src="${c.avatarUrl}" alt="${c.name}" class="w-full h-full object-cover" />
+                </div>
+              ` : `
+                <div class="mt-2 mb-3 py-4 px-3 rounded-lg border border-dashed border-paperslot bg-white/60 text-center">
+                  <svg class="w-7 h-7 mx-auto text-tealaccent/60 mb-1"><use href="#snowflake-1" /></svg>
+                  <span class="font-ui font-bold text-[11px] text-tealaccent block">Hồ sơ nhân vật mùa đông</span>
+                </div>
+              `}
+              <div class="mt-3 space-y-1.5">
+                <div class="scribble-bar flex items-center justify-between"><span>1. Câu chuyện</span><span class="text-xs opacity-85 truncate max-w-[140px]">${c.profRole || 'Mở đọc'}</span></div>
+                <div class="scribble-bar flex items-center justify-between"><span>2. Hồ sơ</span><span class="text-xs opacity-85 truncate max-w-[140px]">${c.profAge || 'Chi tiết'}</span></div>
+                <div class="scribble-bar flex items-center justify-between"><span>3. Liên kết & Nhạc</span><span class="text-xs opacity-85">${c.mp3Url ? 'Có Sound .mp3' : 'Mở xem'}</span></div>
+              </div>
+            </div>
+            <p class="mt-3.5 text-center font-journal italic text-xs text-inknavy/75">"${c.tagline || 'Every thought has its own kind of beauty'}"</p>
+          </div>
+        `;
+        card.addEventListener('click', () => openCharacterModal(c));
+        grid.appendChild(card);
+      });
+    }
+    renderCharacterCards();
+
+    function openCharacterModal(c) {
+      currentModalChar = c;
+      document.getElementById('modal-char-title').textContent = c.name;
+      document.getElementById('modal-char-tagline').textContent = c.tagline || "Every thought has its own kind of beauty";
+      const fallbackSvg = "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='400' viewBox='0 0 300 400'><rect width='300' height='400' fill='%23E7F5F9'/><text x='150' y='200' font-family='serif' font-size='15' fill='%231A4968' text-anchor='middle'>Hồ sơ nhân vật</text></svg>";
+      document.getElementById('modal-char-avatar').setAttribute('src', (c.avatarUrl && c.avatarUrl.trim() !== "") ? c.avatarUrl : fallbackSvg);
+      document.getElementById('modal-char-story').textContent = c.backstory || "Chưa có câu chuyện cho nhân vật này.";
+      document.getElementById('modal-char-sound-label').textContent = c.mp3Url ? "Phát nhạc nhân vật (.mp3)" : "Chưa gắn nhạc .mp3";
+
+      const profGrid = document.getElementById('modal-char-profile');
+      profGrid.innerHTML = "";
+      const fields = [
+        ["Họ tên / Biệt danh", c.profName], ["Tuổi / Ngày sinh", c.profAge], ["Giới tính / Quốc tịch", c.profGender],
+        ["Chiều cao / Ngoại hình", c.profHeight], ["Nghề nghiệp / Vai trò", c.profRole], ["MBTI / Tính cách", c.profMbti],
+        ["Sở thích / Sở ghét", c.profLikes], ["Điểm mạnh / Điểm yếu", c.profStrength]
+      ];
+      if (c.profCustom) {
+        c.profCustom.split('\n').forEach(line => {
+          const idx = line.indexOf(':');
+          if (idx > 0) fields.push([line.slice(0, idx).trim(), line.slice(idx + 1).trim()]);
+        });
+      }
+      const nonEmpty = fields.filter(f => f[1] && String(f[1]).trim() !== "");
+      profGrid.innerHTML = nonEmpty.length === 0 ? `<p class="text-xs text-inknavy/60 col-span-2">Chưa có thông tin hồ sơ.</p>` : "";
+      nonEmpty.forEach(([label, val]) => {
+        const item = document.createElement('div');
+        item.className = "p-3 rounded-lg bg-white/85 border border-paperslot/40";
+        item.innerHTML = `<span class="block font-ui font-bold text-[11px] text-tealaccent">${label}</span><strong class="font-body text-xs text-inknavy">${val}</strong>`;
+        profGrid.appendChild(item);
+      });
+
+      const linksBox = document.getElementById('modal-char-links');
+      linksBox.innerHTML = "";
+      const lines = (c.linksRaw || "").split('\n').map(l => l.trim()).filter(Boolean);
+      linksBox.innerHTML = lines.length === 0 ? `<p class="text-xs text-inknavy/60">Chưa có liên kết nào.</p>` : "";
+      lines.forEach((line, idx) => {
+        const [title, url, pass] = line.split('|').map(s => (s || "").trim());
+        const bar = document.createElement('div');
+        bar.className = "scribble-bar flex items-center justify-between gap-2";
+        if (pass) {
+          bar.innerHTML = `<span>${idx + 1}. [Khóa] ${title}</span><button type="button" class="btn-journal px-3 py-1 text-xs">Mở khóa</button>`;
+          bar.querySelector('button').addEventListener('click', () => openSecretLinkDialog(title, url, pass, c.fbUrl));
+        } else {
+          bar.innerHTML = `<span class="truncate">${idx + 1}. ${title}</span><div class="flex items-center gap-1.5 shrink-0"><button type="button" class="copy-char-link btn-journal-light px-2.5 py-0.5 text-xs">Sao chép</button><a href="${url}" target="_blank" rel="noopener noreferrer" class="btn-journal px-3 py-0.5 text-xs">Mở</a></div>`;
+          bar.querySelector('.copy-char-link').addEventListener('click', () => { navigator.clipboard.writeText(url); notify("Đã sao chép liên kết!"); });
+        }
+        linksBox.appendChild(bar);
+      });
+
+      renderCharComments(c.id);
+      document.getElementById('character-modal').classList.remove('hidden');
+    }
+
+    document.getElementById('btn-close-char-modal').addEventListener('click', () => document.getElementById('character-modal').classList.add('hidden'));
+    document.getElementById('btn-play-char-mp3').addEventListener('click', () => { if (currentModalChar) playMp3Source(currentModalChar.mp3Url, currentModalChar.name); });
+    document.getElementById('btn-edit-this-char').addEventListener('click', () => {
+      if (!currentModalChar) return;
+      document.getElementById('character-modal').classList.add('hidden');
+      loadCharacterIntoForm(currentModalChar);
+      document.getElementById('admin-dashboard-modal').classList.remove('hidden');
+    });
+
+    document.querySelectorAll('.char-box-tab').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = btn.dataset.charBox;
+        document.querySelectorAll('.char-box-panel').forEach(p => p.classList.add('hidden'));
+        document.getElementById(target).classList.remove('hidden');
+        document.querySelectorAll('.char-box-tab').forEach(b => { b.className = "char-box-tab px-3 py-1 rounded-lg bg-paperslot/30 text-inknavy font-ui font-bold text-xs"; });
+        btn.className = "char-box-tab px-3 py-1 rounded-lg bg-journaldeep text-papercream font-ui font-bold text-xs";
+      });
+    });
+
+    // MỞ KHÓA LINK BÍ MẬT
+    let pendingSecret = null, waitingFbReturn = false;
+    function openSecretLinkDialog(title, url, pass, fbUrl) {
+      pendingSecret = { title, url, pass, fbUrl: fbUrl || "https://facebook.com" };
+      waitingFbReturn = false;
+      document.getElementById('secret-modal-link-name').textContent = title;
+      document.getElementById('secret-pass-field').value = "";
+      document.getElementById('secret-pass-section').classList.remove('hidden');
+      document.getElementById('secret-fb-instruction').classList.add('hidden');
+      document.getElementById('secret-unlocked-view').classList.add('hidden');
+      document.getElementById('btn-visit-fb-to-unlock').href = pendingSecret.fbUrl;
+      document.getElementById('secret-link-modal').classList.remove('hidden');
+    }
+
+    function revealLockedLink(message) {
+      document.getElementById('secret-pass-section').classList.add('hidden');
+      document.getElementById('secret-fb-instruction').classList.add('hidden');
+      document.getElementById('secret-unlocked-view').classList.remove('hidden');
+      document.getElementById('secret-thankyou-banner').textContent = message;
+      document.getElementById('secret-revealed-url').textContent = pendingSecret.url;
+      document.getElementById('btn-open-revealed-url').href = pendingSecret.url;
+    }
+
+    document.getElementById('btn-submit-secret-pass').addEventListener('click', () => {
+      const val = document.getElementById('secret-pass-field').value.trim();
+      if (pendingSecret && val === pendingSecret.pass) revealLockedLink("Mật khẩu chính xác! Liên kết đã được mở khóa.");
+      else notify("Mật khẩu chưa đúng!");
+    });
+    document.getElementById('btn-show-fb-unlock').addEventListener('click', () => document.getElementById('secret-fb-instruction').classList.remove('hidden'));
+    document.getElementById('btn-visit-fb-to-unlock').addEventListener('click', () => { waitingFbReturn = true; });
+    window.addEventListener('focus', () => {
+      if (waitingFbReturn && pendingSecret) { waitingFbReturn = false; revealLockedLink("❄️Koly then kiu tình iu đã phô lô❄️"); }
+    });
+    document.getElementById('btn-copy-revealed-url').addEventListener('click', () => { if (pendingSecret) { navigator.clipboard.writeText(pendingSecret.url); notify("Đã sao chép liên kết!"); } });
+    document.getElementById('btn-close-secret-modal').addEventListener('click', () => document.getElementById('secret-link-modal').classList.add('hidden'));
+
+    // LƯU BÚT NHÂN VẬT
+    let lastCmtTime = 0;
+    document.getElementById('char-comment-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (!currentModalChar) return;
+      if (Date.now() - lastCmtTime < 10000) { notify("Vui lòng đợi 10 giây giữa mỗi lần gửi lưu bút."); return; }
+      const author = document.getElementById('cmt-author-input').value.trim();
+      const content = document.getElementById('cmt-content-input').value.trim();
+      if (!author || !content) return;
+      lastCmtTime = Date.now();
+      document.getElementById('cmt-content-input').value = "";
+      const cmtObj = { id: "cmt_" + Date.now(), characterId: currentModalChar.id, author, content, createdAt: Date.now() };
+      state.comments.unshift(cmtObj); persistState(); renderCharComments(currentModalChar.id);
+      addDoc(collection(db, "comments"), cmtObj).catch(() => {});
+      notify("Đã gửi lưu bút!");
+    });
+
+    function renderCharComments(charId) {
+      const box = document.getElementById('modal-comments-container');
+      const list = state.comments.filter(c => c.characterId === charId);
+      document.getElementById('modal-cmt-total').textContent = list.length;
+      box.innerHTML = list.length === 0 ? `<p class="text-xs text-inknavy/55 py-3">Chưa có lưu bút nào.</p>` : "";
+      list.forEach(c => {
+        const div = document.createElement('div');
+        div.className = "p-2.5 rounded-lg bg-white/85 border border-paperslot/40 text-xs";
+        div.innerHTML = `<strong class="text-journaldeep">${c.author}:</strong> <span class="text-inknavy">${c.content}</span>`;
+        box.appendChild(div);
+      });
+    }
+
+    // COMMISSION VIẾT CHAR
+    function fileToDataUrl(file, maxW = 1000) {
+      return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = (ev) => {
+          if (file.type.startsWith('audio/') || file.type === 'image/gif') { resolve(ev.target.result); return; }
+          const img = new Image();
+          img.onload = () => {
+            const canvas = document.createElement('canvas');
+            let w = img.width, h = img.height;
+            if (w > maxW) { h = Math.round((h * maxW) / w); w = maxW; }
+            canvas.width = w; canvas.height = h;
+            canvas.getContext('2d').drawImage(img, 0, 0, w, h);
+            resolve(canvas.toDataURL('image/jpeg', 0.86));
+          };
+          img.onerror = reject; img.src = ev.target.result;
+        };
+        reader.onerror = reject; reader.readAsDataURL(file);
+      });
+    }
+
+    function renderCommissionPage() {
+      const comm = state.commission;
+      const imgEl = document.getElementById('comm-uploaded-img');
+      const promptEl = document.getElementById('comm-empty-prompt');
+      if (comm.imageUrl && comm.imageUrl.trim() !== "") {
+        imgEl.setAttribute('src', comm.imageUrl);
+        imgEl.classList.remove('hidden'); promptEl.classList.add('hidden');
+      } else {
+        imgEl.classList.add('hidden'); promptEl.classList.remove('hidden');
+      }
+      const linkVal = comm.linkUrl || "https://facebook.com/";
+      document.getElementById('comm-link-readonly').value = linkVal;
+      document.getElementById('btn-open-comm-link').href = linkVal;
+      document.getElementById('comm-note-display').textContent = comm.note || "";
+      document.getElementById('quick-comm-link-edit').value = linkVal;
+      document.getElementById('quick-comm-note-edit').value = comm.note || "";
+    }
+    renderCommissionPage();
+
+    async function handleQuickCommImageUpload(e) {
+      const file = e.target.files[0];
+      if (!file) return;
+      state.commission.imageUrl = await fileToDataUrl(file, 1100);
+      persistState(); renderCommissionPage();
+      notify("Đã chèn ảnh Commission!");
+    }
+    document.getElementById('quick-comm-img-input').addEventListener('change', handleQuickCommImageUpload);
+    document.getElementById('replace-comm-img-input').addEventListener('change', handleQuickCommImageUpload);
+    document.getElementById('btn-copy-comm-link').addEventListener('click', () => {
+      navigator.clipboard.writeText(document.getElementById('comm-link-readonly').value);
+      notify("Đã sao chép đường dẫn Commission!");
+    });
+    document.getElementById('btn-save-quick-comm').addEventListener('click', () => {
+      state.commission.linkUrl = document.getElementById('quick-comm-link-edit').value.trim() || "https://facebook.com/";
+      state.commission.note = document.getElementById('quick-comm-note-edit').value.trim();
+      persistState(); renderCommissionPage();
+      notify("Đã lưu đường dẫn Commission!");
+    });
+
+    // TRÒ CHƠI HẢI CẨU NÉM TUYẾT (CÓ RANDOM TÊN CHAR + CÂU CHỮA LÀNH)
+    let throwCount = 0, throwLocked = false;
+    const iceCube = document.getElementById('luminous-ice-block');
+    const burstBox = document.getElementById('ice-burst-container');
+    const sealThrower = document.getElementById('seal-thrower-box');
+    const snowballEl = document.getElementById('snowball-projectile');
+    const revealPaper = document.getElementById('healing-paper-reveal');
+
+    function spawnSixPointedBurst(count = 14) {
+      const syms = ['#snowflake-1', '#snowflake-2', '#snowflake-3'];
+      for (let i = 0; i < count; i++) {
+        const angle = (Math.PI * 2 * i) / count;
+        const dist = Math.floor(Math.random() * 65) + 45;
+        const sz = Math.floor(Math.random() * 12) + 14;
+        const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+        svg.setAttribute("class", "burst-snowflake text-white drop-shadow");
+        svg.style.width = `${sz}px`; svg.style.height = `${sz}px`;
+        svg.style.setProperty('--tx', Math.round(Math.cos(angle) * dist) + "px");
+        svg.style.setProperty('--ty', Math.round(Math.sin(angle) * dist) + "px");
+        svg.innerHTML = `<use href="${syms[i % 3]}"></use>`;
+        burstBox.appendChild(svg);
+        setTimeout(() => svg.remove(), 960);
+      }
+    }
+
+    function triggerSnowballThrow() {
+      if (throwCount >= 3 || throwLocked) return;
+      throwLocked = true; throwCount++;
+      document.getElementById('ice-throw-badge').textContent = `Lượt ném tuyết: ${throwCount} / 3`;
+
+      sealThrower.style.transform = "rotate(-10deg) scale(1.07)";
+      snowballEl.classList.remove('hidden');
+      snowballEl.style.left = "120px"; snowballEl.style.bottom = "88px";
+      setTimeout(() => { snowballEl.style.left = "66%"; snowballEl.style.bottom = "105px"; }, 25);
+
+      setTimeout(() => {
+        sealThrower.style.transform = "rotate(0deg) scale(1)";
+        snowballEl.classList.add('hidden');
+
+        if (throwCount === 1) {
+          iceCube.classList.add('ice-stage-1');
+          spawnSixPointedBurst(10);
+        } else if (throwCount === 2) {
+          iceCube.classList.remove('ice-stage-1');
+          iceCube.classList.add('ice-stage-2');
+          spawnSixPointedBurst(16);
+        } else if (throwCount === 3) {
+          iceCube.classList.remove('ice-stage-2');
+          iceCube.classList.add('ice-stage-dissolve');
+          spawnSixPointedBurst(26);
+
+          setTimeout(() => {
+            const list = state.quotes.length > 0 ? state.quotes : ["Chúc bạn một mùa đông thật ấm áp và bình yên! ❄️"];
+            const randomQuote = list[Math.floor(Math.random() * list.length)];
+            const charList = state.characters && state.characters.length > 0 ? state.characters : [{ name: "Koly" }];
+            const randomChar = charList[Math.floor(Math.random() * charList.length)];
+            const shortName = (randomChar.name || "Koly").split('—')[0].trim();
+
+            document.getElementById('healing-random-char').textContent = `❄️ Nhân vật nhận được: ${shortName}`;
+            document.getElementById('healing-quote-output').textContent = `"${randomQuote}"`;
+            revealPaper.classList.remove('hidden');
+          }, 380);
+        }
+        throwLocked = false;
+      }, 340);
+    }
+
+    document.getElementById('btn-throw-snow').addEventListener('click', triggerSnowballThrow);
+    document.getElementById('ice-game-arena').addEventListener('click', triggerSnowballThrow);
+    document.getElementById('btn-reset-ice-game').addEventListener('click', () => {
+      throwCount = 0; throwLocked = false;
+      document.getElementById('ice-throw-badge').textContent = "Lượt ném tuyết: 0 / 3";
+      iceCube.classList.remove('ice-stage-1', 'ice-stage-2', 'ice-stage-dissolve');
+      revealPaper.classList.add('hidden');
+    });
+
+    // HỘP THƯ YÊU THƯƠNG & DONATE
+    document.getElementById('love-letter-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const isAnon = document.getElementById('letter-anon-check').checked;
+      const senderVal = document.getElementById('letter-sender-input').value.trim();
+      const sender = isAnon ? "Một người bạn ẩn danh" : (senderVal || "Khách ghé thăm");
+      const body = document.getElementById('letter-body-input').value.trim();
+      if (!body) return;
+
+      const flyEl = document.getElementById('flying-envelope-el');
+      flyEl.classList.remove('hidden', 'fly-away'); void flyEl.offsetWidth; flyEl.classList.add('fly-away');
+
+      const letterObj = { id: "let_" + Date.now(), sender, body, featured: true, createdAt: Date.now() };
+      state.letters.unshift(letterObj); persistState();
+      renderFeaturedLetters(); renderAdminLetters();
+      addDoc(collection(db, "loveLetters"), letterObj).catch(() => {});
+      document.getElementById('letter-body-input').value = "";
+      notify("Đã gửi tâm thư vào hòm thư mùa đông!");
+    });
+
+    function renderFeaturedLetters() {
+      const grid = document.getElementById('featured-letters-grid');
+      const emptyEl = document.getElementById('featured-letters-empty');
+      const featured = state.letters.filter(l => l.featured);
+      document.getElementById('letters-count-pill').textContent = `${featured.length} lá thư`;
+      grid.innerHTML = "";
+      if (featured.length === 0) { emptyEl.classList.remove('hidden'); return; }
+      emptyEl.classList.add('hidden');
+      featured.forEach(l => {
+        const card = document.createElement('div');
+        card.className = "p-4 rounded-xl bg-white/90 border border-paperslot/50 shadow-sm";
+        card.innerHTML = `<strong class="font-journal italic font-bold text-lg text-inknavy block">${l.sender}</strong><p class="font-body text-xs text-inknavy/85 mt-1 leading-relaxed whitespace-pre-line">${l.body}</p>`;
+        grid.appendChild(card);
+      });
+    }
+    renderFeaturedLetters();
+
+    document.getElementById('btn-open-donate-popup').addEventListener('click', () => document.getElementById('donate-popup-modal').classList.remove('hidden'));
+    document.getElementById('btn-close-donate-popup').addEventListener('click', () => document.getElementById('donate-popup-modal').classList.add('hidden'));
+    document.getElementById('btn-copy-donate-acc').addEventListener('click', () => { navigator.clipboard.writeText(state.siteConfig.bankNum || ""); notify("Đã sao chép số tài khoản!"); });
+
+    function applySiteConfigToUi() {
+      const cfg = state.siteConfig;
+      const sealImg = document.getElementById('game-custom-seal-img');
+      const sealSvg = document.getElementById('game-default-seal-svg');
+      if (cfg.sealMascotUrl && cfg.sealMascotUrl.trim() !== "") {
+        sealImg.setAttribute('src', cfg.sealMascotUrl);
+        sealImg.classList.remove('hidden'); sealSvg.classList.add('hidden');
+      } else {
+        sealImg.classList.add('hidden'); sealSvg.classList.remove('hidden');
+      }
+      document.getElementById('donate-bank-text').textContent = cfg.bankName || "Vietcombank";
+      document.getElementById('donate-holder-text').textContent = cfg.bankHolder || "KOLY";
+      document.getElementById('donate-number-text').textContent = cfg.bankNum || "0123456789";
+      const qrImg = document.getElementById('donate-qr-image');
+      const qrPh = document.getElementById('donate-qr-placeholder');
+      if (cfg.qrUrl && cfg.qrUrl.trim() !== "") {
+        qrImg.setAttribute('src', cfg.qrUrl);
+        qrImg.classList.remove('hidden'); qrPh.classList.add('hidden');
+      } else {
+        qrImg.classList.add('hidden'); qrPh.classList.remove('hidden');
+      }
+    }
+    applySiteConfigToUi();
+
+    // QUẢN TRỊ HOST
+    const openAdminModal = () => document.getElementById('admin-dashboard-modal').classList.remove('hidden');
+    document.getElementById('btn-open-admin').addEventListener('click', openAdminModal);
+    document.getElementById('btn-add-char-shortcut').addEventListener('click', () => { resetAdminCharForm(); openAdminModal(); });
+    document.getElementById('btn-close-admin-modal').addEventListener('click', () => document.getElementById('admin-dashboard-modal').classList.add('hidden'));
+
+    document.querySelectorAll('.adm-nav-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.adm-panel-view').forEach(p => p.classList.add('hidden'));
+        document.getElementById(btn.dataset.admPanel).classList.remove('hidden');
+        document.querySelectorAll('.adm-nav-btn').forEach(b => {
+          b.className = "adm-nav-btn btn-journal-light px-3.5 py-1.5 text-xs";
+        });
+        btn.className = "adm-nav-btn btn-journal px-3.5 py-1.5 text-xs";
+      });
+    });
+
+    document.getElementById('f-char-avatar-file').addEventListener('change', async (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+      document.getElementById('f-char-avatar-url').value = await fileToDataUrl(file, 720);
+      notify("Đã nạp ảnh nhân vật từ máy!");
+    });
+
+    document.getElementById('f-char-mp3-file').addEventListener('change', async (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+      document.getElementById('f-char-mp3-url').value = await fileToDataUrl(file);
+      notify("Đã nạp file nhạc .mp3 cho nhân vật!");
+    });
+
+    function resetAdminCharForm() {
+      document.getElementById('adm-character-form').reset();
+      document.getElementById('f-char-id').value = "";
+      document.getElementById('btn-adm-delete-char').classList.add('hidden');
+    }
+    document.getElementById('btn-adm-create-new-char').addEventListener('click', resetAdminCharForm);
+
+    function loadCharacterIntoForm(c) {
+      document.getElementById('f-char-id').value = c.id;
+      document.getElementById('f-char-name').value = c.name || "";
+      document.getElementById('f-char-tagline').value = c.tagline || "";
+      document.getElementById('f-char-avatar-url').value = c.avatarUrl || "";
+      document.getElementById('f-char-mp3-url').value = c.mp3Url || "";
+      document.getElementById('f-char-story').value = c.backstory || "";
+      document.getElementById('f-prof-name').value = c.profName || "";
+      document.getElementById('f-prof-age').value = c.profAge || "";
+      document.getElementById('f-prof-gender').value = c.profGender || "";
+      document.getElementById('f-prof-height').value = c.profHeight || "";
+      document.getElementById('f-prof-role').value = c.profRole || "";
+      document.getElementById('f-prof-mbti').value = c.profMbti || "";
+      document.getElementById('f-prof-likes').value = c.profLikes || "";
+      document.getElementById('f-prof-strength').value = c.profStrength || "";
+      document.getElementById('f-prof-custom').value = c.profCustom || "";
+      document.getElementById('f-char-fb').value = c.fbUrl || "";
+      document.getElementById('f-char-links').value = c.linksRaw || "";
+      document.getElementById('btn-adm-delete-char').classList.remove('hidden');
+    }
+
+    document.getElementById('adm-character-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const id = document.getElementById('f-char-id').value || ("char_" + Date.now());
+      const charData = {
+        id,
+        name: document.getElementById('f-char-name').value.trim(),
+        tagline: document.getElementById('f-char-tagline').value.trim(),
+        avatarUrl: document.getElementById('f-char-avatar-url').value.trim(),
+        mp3Url: document.getElementById('f-char-mp3-url').value.trim(),
+        backstory: document.getElementById('f-char-story').value,
+        profName: document.getElementById('f-prof-name').value.trim(),
+        profAge: document.getElementById('f-prof-age').value.trim(),
+        profGender: document.getElementById('f-prof-gender').value.trim(),
+        profHeight: document.getElementById('f-prof-height').value.trim(),
+        profRole: document.getElementById('f-prof-role').value.trim(),
+        profMbti: document.getElementById('f-prof-mbti').value.trim(),
+        profLikes: document.getElementById('f-prof-likes').value.trim(),
+        profStrength: document.getElementById('f-prof-strength').value.trim(),
+        profCustom: document.getElementById('f-prof-custom').value,
+        fbUrl: document.getElementById('f-char-fb').value.trim(),
+        linksRaw: document.getElementById('f-char-links').value
+      };
+      const idx = state.characters.findIndex(x => x.id === id);
+      if (idx >= 0) state.characters[idx] = charData;
+      else state.characters.push(charData);
+
+      persistState();
+      renderCharacterCards();
+      renderAdminCharactersList();
+      setDoc(doc(db, "characters", id), charData).catch(() => {});
+      resetAdminCharForm();
+      notify("Đã lưu hồ sơ nhân vật!");
+    });
+
+    document.getElementById('btn-adm-delete-char').addEventListener('click', () => {
+      const id = document.getElementById('f-char-id').value;
+      if (!id) return;
+      state.characters = state.characters.filter(x => x.id !== id);
+      persistState();
+      renderCharacterCards();
+      renderAdminCharactersList();
+      deleteDoc(doc(db, "characters", id)).catch(() => {});
+      resetAdminCharForm();
+      notify("Đã xóa nhân vật.");
+    });
+
+    function renderAdminCharactersList() {
+      const box = document.getElementById('adm-characters-list');
+      box.innerHTML = "";
+      state.characters.forEach(c => {
+        const row = document.createElement('div');
+        row.className = "p-2.5 rounded-lg bg-outericy/40 border border-paperslot flex items-center justify-between cursor-pointer hover:bg-outericy text-xs";
+        row.innerHTML = `<span class="font-bold text-inknavy truncate">${c.name}</span><span class="text-tealaccent shrink-0">Chỉnh sửa</span>`;
+        row.addEventListener('click', () => loadCharacterIntoForm(c));
+        box.appendChild(row);
+      });
+    }
+    renderAdminCharactersList();
+
+    document.getElementById('adm-comm-file').addEventListener('change', async (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+      document.getElementById('adm-comm-img-url').value = await fileToDataUrl(file, 1100);
+      notify("Đã nạp ảnh Commission!");
+    });
+
+    document.getElementById('btn-adm-save-comm').addEventListener('click', () => {
+      const imgVal = document.getElementById('adm-comm-img-url').value.trim();
+      const linkVal = document.getElementById('adm-comm-link').value.trim();
+      const noteVal = document.getElementById('adm-comm-note').value.trim();
+      if (imgVal) state.commission.imageUrl = imgVal;
+      if (linkVal) state.commission.linkUrl = linkVal;
+      if (noteVal) state.commission.note = noteVal;
+      persistState();
+      renderCommissionPage();
+      notify("Đã lưu cấu hình trang Commission!");
+    });
+
+    document.getElementById('adm-global-mp3-file').addEventListener('change', async (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+      document.getElementById('adm-global-mp3-url').value = await fileToDataUrl(file);
+      notify("Đã nạp file nhạc nền chung (.mp3)!");
+    });
+
+    document.getElementById('adm-seal-file').addEventListener('change', async (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+      document.getElementById('adm-seal-url').value = await fileToDataUrl(file, 500);
+      notify("Đã nạp ảnh Hải Cẩu đội mũ len!");
+    });
+
+    document.getElementById('adm-qr-file').addEventListener('change', async (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+      document.getElementById('adm-qr-url').value = await fileToDataUrl(file, 500);
+      notify("Đã nạp ảnh QR Donate!");
+    });
+
+    document.getElementById('adm-sound-mascot-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const mp3Val = document.getElementById('adm-global-mp3-url').value.trim();
+      const sealVal = document.getElementById('adm-seal-url').value.trim();
+      if (mp3Val) state.siteConfig.globalMp3Url = mp3Val;
+      if (sealVal) state.siteConfig.sealMascotUrl = sealVal;
+      persistState();
+      applySiteConfigToUi();
+      notify("Đã lưu Nhạc nền chung & Ảnh Hải cẩu!");
+    });
+
+    document.getElementById('adm-donate-config-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const qrVal = document.getElementById('adm-qr-url').value.trim();
+      if (qrVal) state.siteConfig.qrUrl = qrVal;
+      state.siteConfig.bankName = document.getElementById('adm-bank-name').value.trim() || state.siteConfig.bankName;
+      state.siteConfig.bankHolder = document.getElementById('adm-bank-holder').value.trim() || state.siteConfig.bankHolder;
+      state.siteConfig.bankNum = document.getElementById('adm-bank-num').value.trim() || state.siteConfig.bankNum;
+      persistState();
+      applySiteConfigToUi();
+      notify("Đã lưu thông tin Góc Nhỏ Yêu Thương!");
+    });
+
+    function renderAdminQuotes() {
+      const box = document.getElementById('adm-quotes-container');
+      box.innerHTML = "";
+      state.quotes.forEach((q, idx) => {
+        const row = document.createElement('div');
+        row.className = "p-2 rounded-lg bg-outericy/40 border border-paperslot flex items-center justify-between gap-2 text-xs";
+        row.innerHTML = `<span>${q}</span><button type="button" class="text-red-700 font-bold shrink-0">Xóa</button>`;
+        row.querySelector('button').addEventListener('click', () => {
+          state.quotes.splice(idx, 1);
+          persistState();
+          renderAdminQuotes();
+        });
+        box.appendChild(row);
+      });
+    }
+    renderAdminQuotes();
+
+    document.getElementById('adm-add-quote-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const val = document.getElementById('adm-new-quote-text').value.trim();
+      if (!val) return;
+      state.quotes.push(val);
+      persistState();
+      renderAdminQuotes();
+      document.getElementById('adm-new-quote-text').value = "";
+      notify("Đã thêm thông điệp chữa lành!");
+    });
+
+    function renderAdminLetters() {
+      const box = document.getElementById('adm-letters-container');
+      box.innerHTML = "";
+      state.letters.forEach((l, idx) => {
+        const row = document.createElement('div');
+        row.className = "p-2.5 rounded-lg bg-outericy/40 border border-paperslot flex items-start justify-between gap-2 text-xs";
+        row.innerHTML = `
+          <div><strong>${l.sender}:</strong> <p>${l.body}</p></div>
+          <div class="flex gap-1 shrink-0">
+            <button type="button" class="feat-btn px-2 py-0.5 rounded bg-white border border-paperslot font-bold">${l.featured ? 'Ẩn' : 'Ghim'}</button>
+            <button type="button" class="del-btn px-2 py-0.5 rounded bg-red-100 text-red-700 font-bold">Xóa</button>
+          </div>
+        `;
+        row.querySelector('.feat-btn').addEventListener('click', () => {
+          state.letters[idx].featured = !state.letters[idx].featured;
+          persistState();
+          renderFeaturedLetters();
+          renderAdminLetters();
+        });
+        row.querySelector('.del-btn').addEventListener('click', () => {
+          state.letters.splice(idx, 1);
+          persistState();
+          renderFeaturedLetters();
+          renderAdminLetters();
+        });
+        box.appendChild(row);
+      });
+    }
+    renderAdminLetters();
+
+    document.getElementById('btn-export-backup').addEventListener('click', () => {
+      const dataUri = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(state, null, 2));
+      const a = document.createElement('a');
+      a.href = dataUri;
+      a.download = "keep-on-loving-you-journal-backup.json";
+      a.click();
+    });
+
+    document.getElementById('input-import-backup').addEventListener('change', (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = (ev) => {
+        try {
+          state = JSON.parse(ev.target.result);
+          persistState();
+          applySiteConfigToUi();
+          renderCharacterCards();
+          renderAdminCharactersList();
+          renderCommissionPage();
+          renderFeaturedLetters();
+          renderAdminLetters();
+          renderAdminQuotes();
+          notify("Đã khôi phục toàn bộ sổ tay từ file JSON!");
+        } catch (err) {
+          notify("Tệp JSON không hợp lệ!");
+        }
+      };
+      reader.readAsText(file);
+    });
+  </script>
+</body>
+</html>
