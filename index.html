@@ -867,7 +867,7 @@
   <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
     import { getAuth, signInAnonymously, signInWithEmailAndPassword, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-    import { getFirestore, collection, doc, setDoc, addDoc, deleteDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+    import { getFirestore, collection, doc, setDoc, addDoc, deleteDoc, onSnapshot } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
     const dismissLoader = () => {
       const loader = document.getElementById('loading-screen');
@@ -952,18 +952,62 @@
       comments: []
     };
 
+    // LƯU ĐỒNG THỜI VÀO MÁY & ĐẨY TOÀN BỘ LÊN ĐÁM MÂY FIREBASE CHO MỌI USER CÙNG THẤY
     function persistState() {
-      try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch (e) {}
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      } catch (e) {}
+
+      // Đẩy cấu hình chung, Commission, Câu nói lên Firebase Firestore
+      setDoc(doc(db, "siteConfig", "main"), {
+        siteConfig: state.siteConfig,
+        commission: state.commission,
+        quotes: state.quotes,
+        updatedAt: Date.now()
+      }, { merge: true }).catch((err) => {
+        console.warn("Lỗi lưu siteConfig lên Firebase (Có thể do file nhạc/ảnh quá 1MB hoặc chưa mở Rules):", err);
+      });
     }
 
-    function notify(msg) {
-      const stack = document.getElementById('toast-stack');
-      const item = document.createElement('div');
-      item.className = "torn-paper-wrap px-4 py-2.5 shadow-lg pointer-events-auto";
-      item.innerHTML = `<div class="torn-paper-bg"></div><div class="torn-paper-content font-ui font-bold text-xs text-inknavy">${msg}</div>`;
-      stack.appendChild(item);
-      setTimeout(() => item.remove(), 2900);
-    }
+    // TỰ ĐỘNG TẢI DỮ LIỆU TỪ FIREBASE VỀ KHI USER MỞ LINK TRÊN ĐIỆN THOẠI / MÁY KHÁC
+    onSnapshot(doc(db, "siteConfig", "main"), (snap) => {
+      if (snap.exists()) {
+        const data = snap.data();
+        if (data.siteConfig) state.siteConfig = { ...state.siteConfig, ...data.siteConfig };
+        if (data.commission) state.commission = { ...state.commission, ...data.commission };
+        if (Array.isArray(data.quotes) && data.quotes.length > 0) state.quotes = data.quotes;
+        try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch (e) {}
+        applySiteConfigToUi();
+        renderCommissionPage();
+        renderAdminQuotes();
+      }
+    });
+
+    onSnapshot(collection(db, "characters"), (snap) => {
+      if (!snap.empty) {
+        state.characters = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+        try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch (e) {}
+        renderCharacterCards();
+        renderAdminCharactersList();
+      }
+    });
+
+    onSnapshot(collection(db, "loveLetters"), (snap) => {
+      if (!snap.empty) {
+        state.letters = snap.docs.map(d => ({ id: d.id, ...d.data() }))
+          .sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0));
+        renderFeaturedLetters();
+        renderAdminLetters();
+      }
+    });
+
+    onSnapshot(collection(db, "comments"), (snap) => {
+      if (!snap.empty) {
+        state.comments = snap.docs.map(d => ({ id: d.id, ...d.data() }))
+          .sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0));
+        if (currentModalChar) renderCharComments(currentModalChar.id);
+      }
+    });
 
     // CHẾ ĐỘ ẨN SẠCH NÚT HOST VỚI USER — CHỈ MỞ BẰNG PHÍM TẮT SHIFT + H
     // CHẾ ĐỘ BẢO MẬT 2 LỚP: SHIFT + H -> ĐĂNG NHẬP EMAIL FIREBASE MỚI MỞ QUYỀN HOST
